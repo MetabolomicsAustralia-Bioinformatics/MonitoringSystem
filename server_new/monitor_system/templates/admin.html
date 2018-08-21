@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="jumbotron">
+        <div align="center">
+        <h1>admin page!</h1>
+            <p>Hello, here are the current organisations and instruments: </p>
+
+
+     <table border="1">
+     <tr>
+     <th>ID</th>
+         <th>name</th>
+         <th>instrument</th>
+     </tr>
+        {% for organisation in all_organisations %}
+            <tr><td>{{ organisation[0] }}</td>
+                <td>{{ organisation[1] }}</td>
+                <td>
+                    {% for instrument in organisation[2] %}
+                        {{ instrument }}
+                    {% endfor %}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <ul>
+        <br>
+        <br>
+    <li><a href="{{ url_for('admin.register') }}">Register</a></li>
+    </ul>
+    </div>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+{#        <div class="jumbotron">#}
+        <div class="textCenter"><h1 id="welcome"> Welcome! </h1>
+        <div id="intro" class="textCenter"><p>This is a web interface for the Real-time Instrument Monitor </p></div>
+{#    </div>#}
+        </div>
+    
+    <div style="opacity: 0.6">
+        <a href="{{ url_for("detail") }}" >
+            <img class="cent" src="https://www.alumni.unimelb.edu.au/sites/default/files/pictures/6G_institutescolleges_bio21.jpg" alt="">
+
+        </a>
+    </div>
+
+    </div>
+
+
+{% endblock %}

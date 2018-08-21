@@ -1,0 +1,157 @@
+.cent {
+    padding-top: 17px;
+    padding-bottom: 14px;
+    width:80%;
+    margin:0 10%;
+    border-radius:13%;
+    height: 220px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+
+
+#icon {
+    padding-left: 20px;
+}
+
+ul {
+    list-style: none;
+    padding:0;
+    margin: 0;
+    /*list-style-image: url("microscope2.png");*/
+}
+
+#menu {
+    color: white;
+}
+
+/*.ins_icon {*/
+    /*display:inline-block;*/
+    /*width:14px;*/
+    /*height:14px;*/
+    /*margin-right:.3em;*/
+    /*line-height:14px;*/
+    /*vertical-align:text-top;*/
+    /*!*background-image:url("../images/microscope.png");*!*/
+    /*background-position:14px 14px;*/
+    /*background-repeat:no-repeat;*/
+    /*margin-top:1px;*/
+
+/*}*/
+
+.nav li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+
+[class*=" icon-"].pull-right {
+  margin-left: .3em;
+
+}
+
+/*.widget-menu>li>a .icon-chevron-down {*/
+	/*display: none*/
+/*}*/
+.nav li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+.pull-right {
+  float: right;
+}
+/*.collapse {*/
+    /*position: relative;*/
+/*}*/
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+}
+/* makes sure icons active on rollover in links */
+a [class^="icon-"],
+a [class*=" icon-"] {
+  display: inline-block;
+}
+/* makes the font 33% larger relative to the icon container */
+.icon-large:before {
+  vertical-align: -10%;
+  font-size: 1.3333333333333333em;
+}
+    /*height:0;overflow:hidden;-webkit-transition:height 0.35s ease;-moz-transition:height 0.35s ease;-o-transition:height 0.35s ease;transition:height 0.35s ease;}*/
+
+.icon-cog:before {
+    content: "(images/1.png)"
+    }
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    text-decoration: inherit;
+    display: inline-block;
+    speak: none;
+
+}
+
+#menu {
+    /*padding: auto auto 5em auto;*/
+    /*padding: ;*/
+    /*margin:auto;*/
+    float:left;
+    height: 100%;
+    width: 15%;
+    padding-top: 15%;
+    /*padding: auto*/
+    margin-left:2%;
+}
+
+.full {
+    width: 80%;
+    height: 100%;
+    padding-left: 27%;
+}
+
+#welcome {
+    margin: 60px 30px auto auto;
+    text-shadow: 4px 4px 4px #aaa;
+    font-size: 4.5em;
+    font-family: 'Lobster', cursive;
+}
+
+.short {
+    width: 100%;
+    float: left;
+    min-height: 1px;
+    /*margin-left: 20px;*/
+}
+
+body {
+    font-family: 'Lora';
+
+    /*background: lightgray url("images/bio21.jpg");*/
+
+}
+
+
+#intro {
+    font-size: 30px;
+    ligh-weight: bolad;
+    font-family: 'Lobster', cursive;
+    padding-bottom: 20px;
+}
+
+#detailCenter {
+    width:100%;
+    padding-left:0;
+    margin-left:0;
+}
+
+
+
+.not_show {
+    display: none;
+}
