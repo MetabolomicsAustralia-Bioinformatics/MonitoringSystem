@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.js"></script>
+    <!-- <script src="echarts_new.js"></script> -->
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+     
+option = {
+    backgroundColor: '#08254F',
+    // tooltip（提示框组件）
+    tooltip: {
+        //trigger(触发类型)，可选'item','axis','none'
+        trigger: 'axis',
+        axisPointer: {
+            //指示器类型,可选'line','shadow','cross'
+            type: 'shadow'
+        },
+    },
+    //echarts图表的相对于容器的布局,
+    grid: {
+        top: 30,
+    },
+    xAxis: [{
+        type: 'time',
+        axisPointer: {
+                        // show: true
+                    },
+        splitLine: {
+            show: true,
+        },
+         //min: 1533958276000,
+         //max:1537001476000,
+		 
+        //axisTick 坐标轴刻度相关设置
+        axisTick: {
+            show: true
+        },
+        //axixLine 坐标轴轴线相关设置
+        axisLine: {
+            show: true,
+            lineStyle: {
+                color: '#FFFFFF',
+            }
+        },
+        //axisLabel 坐标轴刻度标签的相关设置
+        axisLabel: {
+            show: true,
+        }
+    }, ],
+    yAxis: [{
+        type: 'category',
+        data: ['ins-1', 'ins-2', 'ins-3', 'ins-4', 'ins-5'],
+         axisPointer: {
+                        // show: true
+                    },
+
+        axisLabel: {
+            show: true,
+            color: '#fff',
+            fontSize: 14,
+        },
+        splitLine: {
+            show: false
+        },
+        axisLine: {
+            show: true,
+            lineStyle: {
+                color: '#fff',
+            },
+        },
+        axisTick: {
+            show: true
+        },
+    },
+     ],
+    series: [
+        //      {
+        //     name: '辅助',
+        //     type: 'bar',
+        //     stack: '总量',
+        //     itemStyle: {
+        //         normal: {
+        //             barBorderColor: 'rgba(0,0,0,0)',
+        //             color: 'rgba(0,0,0,0)'
+        //         },
+        //         emphasis: {
+        //             barBorderColor: 'rgba(0,0,0,0)',
+        //             color: 'rgba(0,0,0,0)'
+        //         }
+        //     },
+        //     data: [10, 10, 10, 10, 10]
+        // },
+
+   
+        {
+            type: 'bar',
+            stack: '总量',
+            data: [1530958276000, 1530958276000, 1530058276000, 1530958276000, 1530958276000],
+            barWidth: '30%',
+            // barGap 不同系列的柱间距离
+            barGap: '-100%',
+            z: 2,
+            itemStyle: {
+                //barBorderRadius bar圆角半径
+                barBorderRadius: 50,
+
+                color: '#F97A7A',  
+            },
+        },
+         {
+            type: 'bar',
+            stack: '总量',
+
+            data: [1535001476, 1545001476, 1535001476, 1535001476000, 1535001476000],
+            barWidth: '30%',
+            z: 1,
+            itemStyle: {
+                barBorderRadius: 50,
+                // color:'rgba(255,255,255,0.2)',
+                color: 'rgba(0,191,252)',//blue
+            },
+        },
+         {
+            type: 'bar',
+            stack: '总量',
+
+            data: [1535501476000, 1535081476000, 1536001476000, 1545001476000, 1545101476000],
+            barWidth: '30%',
+            z: 0,
+            itemStyle: {
+                barBorderRadius: 50,
+                color: '#F97A7A', 
+            },
+        },
+
+        //  {
+        //     type: 'bar',
+        //     stack: '总量',
+        //     data:  [1536558276000, 1533958276000, 1534958276000, 1534958276000, 1534958276000],
+        //     barWidth: '30%',
+        //     // barGap 不同系列的柱间距离
+        //     barGap: '-100%',
+        //     // z: 1,
+        //     itemStyle: {
+        //         //barBorderRadius bar圆角半径
+        //         // barBorderRadius: 50,
+        //         color: 'rgba(0,191,252)',
+        //     },
+        // },
+        
+
+        //     type: 'bar',
+        //     // stack: '总量',
+        //     yAxisIndex: 1,
+        //     // barGap: '-100%',
+        //     data: [100, 100, 100, 100, 100],
+        //     barWidth: '30%',
+        //     z: 0,
+        //     itemStyle: {
+        //         // barBorderRadius: 50,
+        //         color: 'rgba(255,255,255,0.2)',
+        //     },
+        // },
+    ]},
+
+        myChart.setOption(option);
+    </script>
+</body>
+</html>

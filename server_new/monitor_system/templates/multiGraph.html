@@ -1,0 +1,136 @@
+    <div id="info" d="{{info}}" style="display:none"></div>
+    <!-- 引入 echarts.js -->
+    <script src="{{ url_for('static',filename='echarts.js') }}"></script>
+
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+   <div id="main" style="width: 625px;height:350px; float:left; margin-left: 20px; margin-top: 40px; padding-left:20px "></div>
+    <script type="text/javascript">
+
+        var info = document.getElementById('info').getAttribute('d');
+        info = JSON.parse(info);
+        console.log(info);
+
+        ins = [];
+
+          var myChart = echarts.init(document.getElementById('main'));
+
+
+option = {
+    backgroundColor: '#08254F',
+    // tooltip（提示框组件）
+    tooltip: {
+        //trigger(触发类型)，可选'item','axis','none'
+        trigger: 'axis',
+        axisPointer: {
+            //指示器类型,可选'line','shadow','cross'
+            type: 'shadow'
+        },
+    },
+    //echarts图表的相对于容器的布局,
+    grid: {
+        top: 30,
+    },
+    xAxis: [{
+        type: 'time',
+        axisPointer: {
+                        // show: true
+                    },
+        splitLine: {
+            show: true,
+        },
+         min: {{ start_time }} - 1000,
+                    max: {{ end_time }},
+                    dateTimeLabelFormats: {
+                        day: '00:00',
+                        hour: '%H:00',
+                    },
+
+                    splitNumber: 10,
+         //min: 1533958276000,
+         //max:1537001476000,
+
+        //axisTick 坐标轴刻度相关设置
+        axisTick: {
+            show: true
+        },
+        //axixLine 坐标轴轴线相关设置
+        axisLine: {
+            show: true,
+            lineStyle: {
+                color: '#FFFFFF',
+            }
+        },
+        //axisLabel 坐标轴刻度标签的相关设置
+        axisLabel: {
+            show: true,
+        }
+    }, ],
+    yAxis: [{
+        type: 'category',
+        data: ins ,
+         axisPointer: {
+                        // show: true
+                    },
+
+        axisLabel: {
+            show: true,
+            color: '#fff',
+            fontSize: 14,
+        },
+        splitLine: {
+            show: false
+        },
+        axisLine: {
+            show: true,
+            lineStyle: {
+                color: '#fff',
+            },
+        },
+        axisTick: {
+            show: true
+        },
+    },
+     ],
+    series: [
+        //      {
+        //     name: '辅助',
+        //     type: 'bar',
+        //     stack: '总量',
+        //     itemStyle: {
+        //         normal: {
+        //             barBorderColor: 'rgba(0,0,0,0)',
+        //             color: 'rgba(0,0,0,0)'
+        //         },
+        //         emphasis: {
+        //             barBorderColor: 'rgba(0,0,0,0)',
+        //             color: 'rgba(0,0,0,0)'
+        //         }
+        //     },
+        //     data: [10, 10, 10, 10, 10]
+        // },
+
+
+        {
+            type: 'bar',
+            stack: '总量',
+            data: [1544958276000, 1545958276000, 1545058276000, 1540958276000, 1545958276000],
+            barWidth: '30%',
+            // barGap 不同系列的柱间距离
+            barGap: '-100%',
+            z: 2,
+            itemStyle: {
+                //barBorderRadius bar圆角半径
+                barBorderRadius: 50,
+
+                color: '#F97A7A',
+            },
+        },
+
+    ]};
+
+        myChart.setOption(option);
+
+        // 基于准备好的dom，初始化echarts实例
+
+    </script>
+</div>

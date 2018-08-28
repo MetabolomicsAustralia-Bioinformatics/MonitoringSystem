@@ -24,10 +24,6 @@ ul {
     /*list-style-image: url("microscope2.png");*/
 }
 
-#menu {
-    color: white;
-}
-
 /*.ins_icon {*/
     /*display:inline-block;*/
     /*width:14px;*/
@@ -97,16 +93,21 @@ a [class*=" icon-"] {
 
 }
 
+#option {
+    /*padding-top: 15%;*/
+     width: 15%;
+}
 #menu {
     /*padding: auto auto 5em auto;*/
     /*padding: ;*/
     /*margin:auto;*/
     float:left;
-    height: 100%;
-    width: 15%;
-    padding-top: 15%;
+    height: 69%;
+    width: 13em;
+
     /*padding: auto*/
-    margin-left:2%;
+    margin-left:2em;
+    color: white;
 }
 
 .full {
@@ -145,13 +146,30 @@ body {
 }
 
 #detailCenter {
-    width:100%;
-    padding-left:0;
-    margin-left:0;
+    text-align: center;
+    height:100em;
+    /*width:100%;*/
+    padding-top:2em;
+    /*margin-left:0;*/
 }
 
 
 
 .not_show {
     display: none;
+}
+
+.active_ins {
+    background-color: #28262c!important;
+	color: #fafafa!important;
+}
+
+button {
+  outline: none!important;
+}
+
+#confirm {
+    color: #212529!important;
+    background-color: #cbdefa !important;
+    border-color: #cbdefa!important;
 }
