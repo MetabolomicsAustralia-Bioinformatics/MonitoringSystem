@@ -1,7 +1,7 @@
     <div id="info" d="{{info}}" style="display:none"></div>
     <!-- 引入 echarts.js -->
     <script src="{{ url_for('static',filename='echarts.js') }}"></script>
-
+  <div class="container">
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
    <div id="main" style="width: 625px;height:350px; float:left; margin-left: 20px; margin-top: 40px; padding-left:20px "></div>
     <script type="text/javascript">
@@ -11,6 +11,19 @@
         console.log(info);
 
         ins = [];
+        maxLen = 1;
+        for(var name in info){
+            ins.push(name);
+            console.log(name);
+            {#st plus et#}
+            len = info[name]['start'].length *2;
+            console.log(len);
+            if(len  > maxLen){
+                maxLen = len;
+            }
+        }
+
+        console.log("hello");
 
           var myChart = echarts.init(document.getElementById('main'));
 
@@ -30,6 +43,19 @@ option = {
     grid: {
         top: 30,
     },
+     dataZoom: [
+                    {   // 这个dataZoom组件，默认控制x轴。
+                        type: 'slider', // 这个 dataZoom 组件是 slider 型 dataZoom 组件
+                        start: 0,      // 左边在 10% 的位置。
+                        end: 100  , // 右边在 60% 的位置。
+                        {#handleSize: 4#}
+                    },
+          {   // 这个dataZoom组件，也控制x轴。
+            type: 'inside', // 这个 dataZoom 组件是 inside 型 dataZoom 组件
+            start: 0,      // 左边在 10% 的位置。
+            end: 100         // 右边在 60% 的位置。
+        }
+                ],
     xAxis: [{
         type: 'time',
         axisPointer: {
@@ -67,7 +93,7 @@ option = {
     }, ],
     yAxis: [{
         type: 'category',
-        data: ins ,
+        data: ins,
          axisPointer: {
                         // show: true
                     },
@@ -75,7 +101,7 @@ option = {
         axisLabel: {
             show: true,
             color: '#fff',
-            fontSize: 14,
+
         },
         splitLine: {
             show: false
@@ -91,42 +117,111 @@ option = {
         },
     },
      ],
-    series: [
-        //      {
-        //     name: '辅助',
-        //     type: 'bar',
-        //     stack: '总量',
-        //     itemStyle: {
-        //         normal: {
-        //             barBorderColor: 'rgba(0,0,0,0)',
-        //             color: 'rgba(0,0,0,0)'
-        //         },
-        //         emphasis: {
-        //             barBorderColor: 'rgba(0,0,0,0)',
-        //             color: 'rgba(0,0,0,0)'
-        //         }
-        //     },
-        //     data: [10, 10, 10, 10, 10]
-        // },
+    series: function(){
+        var serie=[];
+        console.log("max: " + maxLen);
+        for( var i=0;i <= maxLen/2 ;i++) {
+            d = [];
+            for (index in ins) {
+                name = ins[index];
+                console.log(name);
+                {#if(info[name]["start"].length < i){#}
+                {#   var start = '';}#}
+                {#else{#}
+                console.log(name);
+                console.log("bbbbb");
+                console.log("i: " + i);
+                var start = info[name]["start"][i];
+                console.log(start);
+                console.log(maxLen - i * 2);
 
 
-        {
-            type: 'bar',
-            stack: '总量',
-            data: [1544958276000, 1545958276000, 1545058276000, 1540958276000, 1545958276000],
-            barWidth: '30%',
-            // barGap 不同系列的柱间距离
-            barGap: '-100%',
-            z: 2,
-            itemStyle: {
-                //barBorderRadius bar圆角半径
-                barBorderRadius: 50,
+                d.push(start);
+                console.log("starttime: " + d);
+            }
+            var item1 = {
+                type: 'bar',
+                stack: '总量',
+                data: d,
+                barWidth: '30%',
+                // barGap 不同系列的柱间距离
+                barGap: '-100%',
+                {#z:0,#}
+                z: maxLen - i * 2,
+                itemStyle: {
+                    //barBorderRadius bar圆角半径
+                    {#barBorderRadius: 10,#}
 
-                color: '#F97A7A',
-            },
-        },
+                    color: '#cff9ef' ,
+                }
+            };
+            serie.push(item1);
 
-    ]};
+            d = [];
+            for (index in ins) {
+                name = ins[index];
+                console.log(name);
+                {#if(info[name]["start"].length < i){#}
+                {#     console.log("aaaaa");#}
+                {#   var end = '';}#}
+                {#else{#}
+                console.log(name);
+                console.log("bbbbb");
+                console.log("i: " + i);
+                var end = info[name]["end"][i];
+                console.log(end);
+                console.log(maxLen - i * 2 - 1);
+
+                d.push(end);
+                console.log("endtime: " + d);
+            }
+
+            var item2 = {
+                type: 'bar',
+                stack: '总量',
+                data: d,
+                barWidth: '30%',
+                // barGap 不同系列的柱间距离
+                barGap: '-100%',
+                {#z: 1,#}
+                z: maxLen - i * 2 - 1,
+                itemStyle: {
+                    //barBorderRadius bar圆角半径
+                    {#barBorderRadius: 10,#}
+
+                    color: '#F97A7A',
+                }
+            };
+            serie.push(item2);
+        }
+
+            d = [];
+            for(index in ins){
+                d.push({{ end_time }});
+            }
+            var item3 = {
+                type: 'bar',
+                stack: '总量',
+                data: d,
+                barWidth: '30%',
+                // barGap 不同系列的柱间距离
+                barGap: '-100%',
+                {#z: 1,#}
+                z: 0,
+                itemStyle: {
+                    //barBorderRadius bar圆角半径
+                    {#barBorderRadius: 10,#}
+
+                    color: '#cff9ef',
+                }
+            };
+            serie.push(item3);
+
+
+        console.log(serie.length);
+    return serie;
+        }()
+};
 
         myChart.setOption(option);
 

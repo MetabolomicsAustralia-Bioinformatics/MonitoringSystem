@@ -91,10 +91,14 @@ app.init = function(){
 
     app.single.on("click",function(){
         console.log("single")
+        $(this).addClass("active");
+        app.multiple.removeClass("active");
     });
 
     app.multiple.on("click",function(){
-        app.loadMultipleSidebar()
+        app.loadMultipleSidebar();
+        $(this).addClass("active");
+        app.single.removeClass("active");
     });
 
     app.single.on("click",function(){

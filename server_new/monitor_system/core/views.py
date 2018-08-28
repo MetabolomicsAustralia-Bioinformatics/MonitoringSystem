@@ -34,6 +34,8 @@ def detail():
                                           Sample.actual_end >= start).all()
             stList = []
             etList = []
+            info[instrument]["start"] = stList
+            info[instrument]["end"] = etList
             print (instrument)
             # instrumentDic = defaultdict(dict)
             # info[instrument] = instrumentDic
@@ -45,6 +47,8 @@ def detail():
                     et = int(time.mktime(et.timetuple()) * 1000)
                     stList.append(st)
                     etList.append(et)
+                stList.sort()
+                etList.sort()
                 info[instrument]["start"] = stList
                 info[instrument]["end"] = etList
         end = int(time.mktime(end.timetuple()) * 1000)
