@@ -7,12 +7,16 @@
             var myChart = echarts.init(document.getElementById('line'));
             // 指定图表的配置项和数据
             var option = {
+                grid:{
+                  containLabel:true,
+                    {#right:'1%'#}
+                },
                 title: {
                     text: 'Instrument \n{{ selected_instrument }}',
                     padding: [0,50,50,50],
                 },
-                tooltip: {
-                },
+                {#hover#}
+                {#tooltip: {},#}
                  toolbox: {
                     feature: {
                         {#dataView: {show: true, readOnly: false},#}
@@ -22,21 +26,19 @@
                             if (value === 1) {
                                 var text = "running"
                             }
-                            {#else if(value ===0){#}
-                            {#    var text = "finish"#}
-
                             return text
                         }
-                    }
-                 },
+                    }},
                 legend: {
-                    data: ['running status']
-                },
+                    data: ['running status']},
                 dataZoom: [
                     {   // 这个dataZoom组件，默认控制x轴。
                         type: 'slider', // 这个 dataZoom 组件是 slider 型 dataZoom 组件
                         start: 0,      // 左边在 10% 的位置。
-                        end: 100         // 右边在 60% 的位置。
+                        end: 100,    // 右边在 60% 的位置。
+                        filterMode:'none',
+                        realtime:true,
+
                     },
                      {   // 这个dataZoom组件，也控制x轴。
             type: 'inside', // 这个 dataZoom 组件是 inside 型 dataZoom 组件
