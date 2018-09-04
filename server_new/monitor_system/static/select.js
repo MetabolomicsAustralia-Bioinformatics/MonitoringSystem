@@ -97,22 +97,20 @@ app.init = function(){
      });
 
      app.multi_span.on("click",function(){
-         // console.log("clicked span!");
+         app.span.removeClass('active');
          var option = $(this).data('span');
          app.loadMultiSpanGraph(selected_instruments,option);
         });
 
     app.datePicker.on("submit",function(e){
          e.preventDefault();
+         app.span.removeClass('active');
           if(selected_instruments.length > 0){
-             app.span.removeClass('active');
              var start_time = document.querySelector("input[name='start_time']").value;
              var end_time = document.querySelector("input[name='end_time']").value;
              app.loadMultiDatePage(selected_instruments,start_time,end_time)
    }
          else{
-             // console.log(name);
-             app.span.removeClass('active');
              var start_time = document.querySelector("input[name='start_time']").value;
              var end_time = document.querySelector("input[name='end_time']").value;
              app.loadDatePage(name,start_time,end_time)

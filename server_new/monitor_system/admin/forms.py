@@ -1,9 +1,8 @@
 
-
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, IntegerField
-from wtforms.validators import DataRequired,EqualTo
 from wtforms import ValidationError
+from wtforms.validators import DataRequired,Email,EqualTo
 # for profile picture display
 from flask_wtf.file import FileField, FileAllowed
 from monitor_system.models import Organisation,Instrument
@@ -27,10 +26,17 @@ class Ins_RegistrationForm(FlaskForm):
     ins_submit = SubmitField('Register New Instrument!',id="ins_submit")
 
     def validate_name(self, field):
-        print ("in check name")
         # Check if not None for that name!
         if Instrument.query.filter_by(o_id=field.data,ins_name=field.data).first():
             raise ValidationError('Sorry, that instrument name is taken in this organisation!')
+
+
+
+class LoginForm(FlaskForm):
+    email = StringField('Email', validators=[DataRequired(), Email()])
+    password = PasswordField('Password', validators=[DataRequired()])
+    submit = SubmitField('Log In')
+
 
 #
 # class UpdateUserForm(FlaskForm):

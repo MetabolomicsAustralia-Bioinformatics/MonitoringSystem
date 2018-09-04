@@ -4,10 +4,8 @@ import json
 from monitor_system import db
 from monitor_system.models import Sample, Instrument
 from werkzeug.security import check_password_hash
-
 import pymysql
 pymysql.install_as_MySQLdb()
-
 
 # create SSL socket layer
 context = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
@@ -21,9 +19,6 @@ server.bind(("127.0.0.1", 8080))
 server.listen(5)
 
 print("waiting for the client")
-# Administrator can modify this dict to add or remove new client
-# keyFiles = {'instrument1': '111', 'instrument2': '222', 'instrument3': '333'}
-
 
 def checkValid(organisation_id,instrument,password,conn):
     organ_ins = Instrument.query.filter(Instrument.o_id==organisation_id)
@@ -55,21 +50,15 @@ def receiveFile(conn):
             name = jsonFile['file name']
             actual_start = jsonFile['actual start time']
             actual_end = jsonFile['actual end time']
-            start = jsonFile['start time']
-            end = jsonFile['end time']
-            length = jsonFile['length']
             instrument = jsonFile['instrument']
             organisation_id = jsonFile['organisation_id']
             # targets = jsonFile['EIC']
             actual_end = datetime.strptime(actual_end, "%Y-%m-%d %H:%M:%S.%f")
 
             ##create Sample object
-            sample = Sample(organisation_id,name, instrument, actual_start, actual_end,length)
-
-                # print("Created a null row at finish")
+            sample = Sample(organisation_id,name, instrument, actual_start, actual_end)
             # Add to database
             db.session.add_all([sample])
-
 
             db.session.commit()
 

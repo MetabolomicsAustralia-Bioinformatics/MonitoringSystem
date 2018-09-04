@@ -3,7 +3,6 @@
 {% block content %}
     <script src="{{ url_for('static',filename='echarts.js') }}"></script>
 
-
         <div id="detailCenter" class="jumbotron jumbotron-fluid"  style="height: 15em;">
                 <h1 class="display-4">details</h1>
                 <p class="lead">some introduction etc. blah blah blah...</p>
@@ -67,12 +66,9 @@
                     {#                        <i class="fas fa-angle-up pull-right"></i>#}
                 </a>
                 </li>
-{#                    <div>#}
-
                     {% for instrument in all_instruments %}
                         <li class="ins"><a data-name='{{ instrument }}' class="ins_select"
                                href="#">{{ instrument }}</a></li>
-                        {#                                 <option value={{ instrument }}> {{ instrument }}</option>#}
                     {% endfor %}
 
         </ul>
