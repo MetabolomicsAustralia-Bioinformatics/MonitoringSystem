@@ -1,3 +1,11 @@
+body { text-align: center; }
+     /* center all items within body, this property is inherited */
+body > * { text-align: left; }
+     /* left-align the CONTENTS all items within body, additionally
+        you can add this text-align: left property to all elements
+        manually */
+
+
 .cent {
     padding-top: 17px;
     padding-bottom: 14px;
@@ -5,6 +13,26 @@
     margin:0 10%;
     border-radius:13%;
     height: 220px;
+}
+
+/*#parent {*/
+   /*display: table;*/
+   /*height: 100%!important;*/
+    /*width: 100%!important;*/
+/*}*/
+
+.middle {
+    /*display: table-cell;*/
+   /*text-align: center;*/
+   /*vertical-align: middle;*/
+    /*float: none!important;*/
+    display: inline-block!important;
+   margin-left: auto;
+    margin-right: auto;
+    /*text-align: left;*/
+    width: 13em;
+    /*vertical-align: middle!important;*/
+
 }
 
 .textCenter {

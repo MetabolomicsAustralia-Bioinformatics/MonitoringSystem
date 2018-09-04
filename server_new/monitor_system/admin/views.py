@@ -30,9 +30,14 @@ def login():
             login_user(email)
             flash('Logged in successfully.')
 
+            next = request.args.get('next')
 
-            next = url_for('admin.view')
+            # So let's now check if that next exists, otherwise we'll go to
+            # the welcome page.
+            if next == None or not next[0] == '/':
+                next = url_for('admin.view')
 
+            # return redirect(next)
 
 
             return redirect(next)

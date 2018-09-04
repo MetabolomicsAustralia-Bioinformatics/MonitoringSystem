@@ -6,6 +6,7 @@ from monitor_system.models import Sample, Instrument
 from werkzeug.security import check_password_hash
 import pymysql
 pymysql.install_as_MySQLdb()
+import time
 
 # create SSL socket layer
 context = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
