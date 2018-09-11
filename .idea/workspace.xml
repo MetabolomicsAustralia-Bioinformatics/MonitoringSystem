@@ -2,13 +2,70 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab3198d5-3ed0-4727-abad-d3ced63a93b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server_new/readAdmin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input/.idea/dictionaries/42180.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input/.idea/input.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.mzML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/AcqMethod.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/BinPump1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/BinPump1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/Contents.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/DAD1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/DAD1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/DefaultMassCal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/DeviceConfigInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/Devices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/HiP-ALS1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/HiP-ALS1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/MSActualDefs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/MSMassCal.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/MSPeak.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/MSPeriodicActuals.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/MSProfile.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/MSScan.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/MSScan.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/MSTS.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/TCC1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/TCC1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/TDA.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/TDASpec.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/TOFDataIndex.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/Worklist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/191_1.stg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/BinPump_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DAD_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/qualitative.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Quant/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Quant/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1_MethodMetaData.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1_Pretreatment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/TCC_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/AcqData/sample_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/IndexedDataConverter.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/Results/Qual/Version3/Default.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/Results/Qual/Version3/Default.m/DaMethod/Qual/qualitative.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/Results/Qual/Version3/QualResult.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/checksum.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.d/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2.mzML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/input/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/input/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_new/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_new/monitor_system/admin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/admin/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_new/monitor_system/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/multiGraph.html" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/templates/multiGraph.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_new/new_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/new_server.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,16 +75,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/new$client.coverage" NAME="client Coverage Results" MODIFIED="1536061749978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/input" />
-    <SUITE FILE_PATH="coverage/new$app.coverage" NAME="app Coverage Results" MODIFIED="1536066503702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server_new" />
     <SUITE FILE_PATH="coverage/new$Flask__server_web_py_.coverage" NAME="Flask (server/web.py) Coverage Results" MODIFIED="1533974174948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/new$new_server__1_.coverage" NAME="new_server (1) Coverage Results" MODIFIED="1536061721841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server_new" />
-    <SUITE FILE_PATH="coverage/new$Server.coverage" NAME="Server Coverage Results" MODIFIED="1533984657707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server" />
-    <SUITE FILE_PATH="coverage/new$new2_web.coverage" NAME="new2_web Coverage Results" MODIFIED="1534679865610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server" />
+    <SUITE FILE_PATH="coverage/new$new_server__1_.coverage" NAME="new_server (1) Coverage Results" MODIFIED="1536582825933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server_new" />
     <SUITE FILE_PATH="coverage/new$new_server.coverage" NAME="new_server Coverage Results" MODIFIED="1534159294671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server" />
     <SUITE FILE_PATH="coverage/new$Flask__demo_py_.coverage" NAME="Flask (demo.py) Coverage Results" MODIFIED="1533480046253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/new$Flask__new_web_py_.coverage" NAME="Flask (new_web.py) Coverage Results" MODIFIED="1533480135334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/new$Flask__server_new_web_py_.coverage" NAME="Flask (server/new_web.py) Coverage Results" MODIFIED="1533562294866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/new$client.coverage" NAME="client Coverage Results" MODIFIED="1536568637771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/input" />
+    <SUITE FILE_PATH="coverage/new$app.coverage" NAME="app Coverage Results" MODIFIED="1536576076188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server_new" />
+    <SUITE FILE_PATH="coverage/new$Server.coverage" NAME="Server Coverage Results" MODIFIED="1533984657707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server" />
+    <SUITE FILE_PATH="coverage/new$new2_web.coverage" NAME="new2_web Coverage Results" MODIFIED="1534679865610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server" />
+    <SUITE FILE_PATH="coverage/new$client__1_.coverage" NAME="client (1) Coverage Results" MODIFIED="1536203527105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/frontend_learning/exeDemo" />
     <SUITE FILE_PATH="coverage/new$readAdmin.coverage" NAME="readAdmin Coverage Results" MODIFIED="1536066469195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server_new" />
     <SUITE FILE_PATH="coverage/new$new_web.coverage" NAME="new_web Coverage Results" MODIFIED="1534060844269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server" />
   </component>
@@ -35,65 +93,67 @@
     <session id="358056859">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
+          <entry key="project.closed" value="37" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="3" />
-          <entry key="project.open.time.13" value="3" />
-          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.13" value="4" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="4" />
           <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.29" value="1" />
-          <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.3" value="4" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="29" />
+          <entry key="project.opened" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1829" />
+          <entry key="css" value="1972" />
           <entry key="dummy" value="8" />
-          <entry key="html" value="12933" />
-          <entry key="ini" value="67" />
+          <entry key="html" value="13162" />
+          <entry key="ini" value="96" />
           <entry key="js" value="6997" />
-          <entry key="py" value="11676" />
+          <entry key="py" value="12707" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1829" />
-          <entry key="HTML" value="12933" />
-          <entry key="Ini" value="67" />
+          <entry key="CSS" value="1972" />
+          <entry key="HTML" value="13162" />
+          <entry key="Ini" value="96" />
           <entry key="JavaScript" value="6997" />
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Python" value="11676" />
+          <entry key="Python" value="12707" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="21" />
-          <entry key="html" value="40" />
+          <entry key="css" value="22" />
+          <entry key="html" value="43" />
           <entry key="ico" value="1" />
-          <entry key="ini" value="4" />
-          <entry key="js" value="6" />
+          <entry key="ini" value="6" />
+          <entry key="js" value="7" />
           <entry key="pem" value="2" />
-          <entry key="py" value="69" />
+          <entry key="py" value="83" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="21" />
-          <entry key="HTML" value="40" />
+          <entry key="CSS" value="22" />
+          <entry key="HTML" value="43" />
           <entry key="Image" value="1" />
-          <entry key="Ini" value="4" />
-          <entry key="JavaScript" value="6" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="69" />
+          <entry key="Ini" value="6" />
+          <entry key="JavaScript" value="7" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="83" />
         </counts>
       </usages-collector>
     </session>
@@ -103,17 +163,46 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server_new/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="100">
+              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server_new/monitor_system/core/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="194" column="42" selection-start-line="194" selection-start-column="42" selection-end-line="194" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server_new/monitor_system/admin/admin.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server_new/monitor_system/admin/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="300">
+              <caret line="72" column="73" selection-start-line="72" selection-start-column="73" selection-end-line="72" selection-end-column="73" />
               <folding>
                 <element signature="e#0#76#0" expanded="true" />
               </folding>
@@ -121,14 +210,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server_new/new_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-420">
-              <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+            <state relative-caret-position="154">
+              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
-                <marker date="1536065957952" expanded="true" signature="4209:4211" ph="..." />
+                <element signature="e#618#1205#0" />
+                <element signature="e#1236#2777#0" />
+                <element signature="e#2809#3687#0" />
+                <marker date="1536577198539" expanded="true" signature="3647:3649" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/input/config.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/input/client.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="37" column="47" lean-forward="true" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+              <folding>
+                <element signature="e#114#153#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,8 +250,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server_new/readAdmin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="300">
+              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -147,40 +260,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server_new/demo.py">
+        <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/input/client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1278">
-              <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/graph.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="152" column="5" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/multiGraph.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="213" column="24" lean-forward="true" selection-start-line="213" selection-start-column="24" selection-end-line="213" selection-end-column="24" />
+            <state relative-caret-position="403">
+              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -199,23 +282,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>loadmultitime</find>
-      <find>loadmulti</find>
-      <find>multiti</find>
-      <find>loadDefaultMultiGraph</find>
-      <find>multi ins</find>
-      <find>name</find>
-      <find>if</find>
-      <find>confirm</find>
-      <find>multi_name</find>
-      <find>666666</find>
-      <find>span</find>
-      <find>55555555555</find>
-      <find>sele</find>
-      <find>console.log</find>
-      <find>loadmultispangraph</find>
-      <find>multigraph</find>
-      <find>loadmultidatepage</find>
       <find>active</find>
       <find>maxLen</find>
       <find>ratio</find>
@@ -229,6 +295,23 @@
       <find>format</find>
       <find>date</find>
       <find>hover</find>
+      <find>create</find>
+      <find>sample</find>
+      <find>ssl</find>
+      <find>get</find>
+      <find>flash</find>
+      <find>body</find>
+      <find>$</find>
+      <find>send</find>
+      <find>sendFile</find>
+      <find>actual</find>
+      <find>connect</find>
+      <find>conn</find>
+      <find>socket</find>
+      <find>from</find>
+      <find>close</find>
+      <find>wrong</find>
+      <find>size</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -237,11 +320,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/demo.css" />
-        <option value="$PROJECT_DIR$/templates/data.html" />
-        <option value="$PROJECT_DIR$/templates/demo.html" />
-        <option value="$PROJECT_DIR$/demo.py" />
-        <option value="$PROJECT_DIR$/static/style.css" />
         <option value="$PROJECT_DIR$/templates/detail.html" />
         <option value="$PROJECT_DIR$/new_web.py" />
         <option value="$PROJECT_DIR$/templates/home.html" />
@@ -272,22 +350,27 @@
         <option value="$PROJECT_DIR$/server/templates/admin.html" />
         <option value="$PROJECT_DIR$/server/new2_web.py" />
         <option value="$PROJECT_DIR$/server/templates/base.html" />
-        <option value="$PROJECT_DIR$/input/client.py" />
-        <option value="$PROJECT_DIR$/input/config.ini" />
         <option value="$PROJECT_DIR$/server/models.py" />
-        <option value="$PROJECT_DIR$/server_new/monitor_system/__init__.py" />
         <option value="$PROJECT_DIR$/server_new/monitor_system/templates/singleSidebar.html" />
         <option value="$PROJECT_DIR$/server_new/monitor_system/templates/singleTimepicker.html" />
         <option value="$PROJECT_DIR$/server_new/monitor_system/templates/new_detail.html" />
-        <option value="$PROJECT_DIR$/server_new/monitor_system/static/style.css" />
         <option value="$PROJECT_DIR$/server_new/monitor_system/templates/multiTimepicker.html" />
         <option value="$PROJECT_DIR$/server_new/monitor_system/templates/graph.html" />
         <option value="$PROJECT_DIR$/server_new/monitor_system/core/views.py" />
         <option value="$PROJECT_DIR$/server_new/monitor_system/static/select.js" />
         <option value="$PROJECT_DIR$/server_new/monitor_system/templates/multiSidebar.html" />
-        <option value="$PROJECT_DIR$/server_new/new_server.py" />
         <option value="$PROJECT_DIR$/server_new/readAdmin.py" />
         <option value="$PROJECT_DIR$/server_new/monitor_system/templates/multiGraph.html" />
+        <option value="$PROJECT_DIR$/server_new/app.py" />
+        <option value="$PROJECT_DIR$/server_new/monitor_system/templates/login.html" />
+        <option value="$PROJECT_DIR$/server_new/monitor_system/static/style.css" />
+        <option value="$PROJECT_DIR$/server_new/monitor_system/templates/register.html" />
+        <option value="$PROJECT_DIR$/server_new/monitor_system/__init__.py" />
+        <option value="$PROJECT_DIR$/server_new/monitor_system/models.py" />
+        <option value="$PROJECT_DIR$/server_new/monitor_system/admin/views.py" />
+        <option value="$PROJECT_DIR$/input/client.py" />
+        <option value="$PROJECT_DIR$/input/config.ini" />
+        <option value="$PROJECT_DIR$/server_new/new_server.py" />
       </list>
     </option>
   </component>
@@ -303,10 +386,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="660" />
-    <option name="y" value="216" />
-    <option name="width" value="1148" />
-    <option name="height" value="1756" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="2762" />
+    <option name="height" value="1770" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -321,7 +404,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Project-master/new/server_new/monitor_system/static/style.css" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../final/server" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -352,7 +435,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python.new_server (1)">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="new" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -375,6 +458,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="client (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="new" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="D:/frontend_learning/exeDemo" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:/frontend_learning/exeDemo/client.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="new" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -389,28 +494,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/input/client.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="new2_web" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="new" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server/new2_web.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -481,18 +564,18 @@
     <list>
       <item itemvalue="Flask server.new" />
       <item itemvalue="Python.client" />
-      <item itemvalue="Python.new2_web" />
       <item itemvalue="Python.app" />
       <item itemvalue="Python.new_server (1)" />
       <item itemvalue="Python.readAdmin" />
+      <item itemvalue="Python.client (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.app" />
-        <item itemvalue="Python.readAdmin" />
-        <item itemvalue="Python.client" />
         <item itemvalue="Python.new_server (1)" />
-        <item itemvalue="Python.new2_web" />
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.client" />
+        <item itemvalue="Python.client (1)" />
+        <item itemvalue="Python.readAdmin" />
       </list>
     </recent_temporary>
   </component>
@@ -509,6 +592,15 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
     <layout>
@@ -516,7 +608,7 @@
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.329235" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329235" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49962208" weight="0.30327868" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.397541" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -526,9 +618,9 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50037795" side_tool="true" weight="0.24863388" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.7948718" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.329235" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329235" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32827586" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32786885" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -567,35 +659,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/python35/Lib/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="2308" selection-start-line="2308" selection-end-line="2308" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/python35/Lib/site-packages/werkzeug/debug/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="287" selection-start-line="287" selection-end-line="287" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/python35/Lib/site-packages/werkzeug/serving.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="292" selection-start-line="292" selection-end-line="292" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/python35/Lib/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="881" column="35" lean-forward="true" selection-start-line="881" selection-start-column="35" selection-end-line="881" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/form.py" />
     <entry file="file://C:/python35/Lib/socketserver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-88">
@@ -635,31 +698,10 @@
     <entry file="file://$PROJECT_DIR$/server/templates/base.html" />
     <entry file="file://$PROJECT_DIR$/server/models.py" />
     <entry file="file://$PROJECT_DIR$/server/new2_web.py" />
-    <entry file="file://$PROJECT_DIR$/input/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server_new/monitor_system/admin/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="62" lean-forward="true" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -677,16 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#12#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -701,38 +733,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/static/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="162" selection-start-line="162" selection-end-line="163" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/core/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <marker date="1535959210581" expanded="true" signature="15596:19143" ph="..." />
-            <marker date="1535959210581" expanded="true" signature="19274:19302" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/new_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/static/select.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2600">
-          <caret line="133" column="4" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="4" />
-          <folding>
-            <element signature="e#38#130#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -750,61 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1278">
-          <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_new/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_new/new_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <marker date="1536065957952" expanded="true" signature="4209:4211" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/admin/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_new/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_new/readAdmin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/multiTimepicker.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -819,17 +768,170 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/graph.html">
+    <entry file="file://D:/frontend_learning/exeDemo/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="152" column="5" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
+        <state relative-caret-position="14">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python35/Lib/site-packages/pymysql/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="81" column="11" lean-forward="true" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/multiGraph.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="213" column="24" lean-forward="true" selection-start-line="213" selection-start-column="24" selection-end-line="213" selection-end-column="24" />
+        <state relative-caret-position="120">
+          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_new/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/static/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/graph.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2960">
+          <caret line="148" column="17" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/static/select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1460">
+          <caret line="82" column="44" lean-forward="true" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1300">
+          <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding>
+            <element signature="e#12#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_new/readAdmin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/core/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="194" column="42" selection-start-line="194" selection-start-column="42" selection-end-line="194" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/admin/admin.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/admin/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="72" column="73" selection-start-line="72" selection-start-column="73" selection-end-line="72" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="37" column="47" lean-forward="true" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+          <folding>
+            <element signature="e#114#153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_new/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_new/new_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#618#1205#0" />
+            <element signature="e#1236#2777#0" />
+            <element signature="e#2809#3687#0" />
+            <marker date="1536577198539" expanded="true" signature="3647:3649" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -13,34 +13,35 @@ admin = Blueprint('admin',__name__)
 
 @admin.route('/login', methods=['GET', 'POST'])
 def login():
-
-
     form = LoginForm()
     if form.validate_on_submit():
         # Grab the user from our User Models table
         email = Admin.query.filter_by(email=form.email.data).first()
-
         # Check that the user was supplied and the password is right
         # The verify_password method comes from the User object
         # https://stackoverflow.com/questions/2209755/python-operation-vs-is-not
 
-        if email.check_password(form.password.data) and admin is not None:
-            #Log in the user
+        try:
+            if email.check_password(form.password.data) and admin is not None:
+                #Log in the user
 
-            login_user(email)
-            flash('Logged in successfully.')
+                login_user(email)
+                flash('Logged in successfully.')
 
-            next = request.args.get('next')
+                next = request.args.get('next')
 
-            # So let's now check if that next exists, otherwise we'll go to
-            # the welcome page.
-            if next == None or not next[0] == '/':
-                next = url_for('admin.view')
-
-            # return redirect(next)
+                # So let's now check if that next exists, otherwise we'll go to
+                # the welcome page.
+                if next == None or not next[0] == '/':
+                    next = url_for('admin.view')
 
 
-            return redirect(next)
+                # return redirect(next)
+                return redirect(next)
+        except:
+            flash("Incorrect Email or password.")
+            flash("Please try again")
+
     return render_template('login.html', form=form)
 
 
@@ -74,7 +75,7 @@ def register():
             db.session.add(instrument)
             db.session.commit()
             flash("success!   registered new instruments! ")
-            return redirect(url_for('admin.index'))
+            return redirect(url_for('admin.view'))
 
         elif organ_form.validate_on_submit():
             organisation = Organisation(name=organ_form.organ_name.data)
@@ -82,7 +83,7 @@ def register():
             db.session.add(organisation)
             db.session.commit()
             flash("success!   registered new organisation! ")
-            return redirect(url_for('admin.index'))
+            return redirect(url_for('admin.view'))
 
 
     return render_template('register.html', organ_form=organ_form, ins_form=ins_form)

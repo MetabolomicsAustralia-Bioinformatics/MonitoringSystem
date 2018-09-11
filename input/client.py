@@ -5,13 +5,12 @@ from watchdog.events import *
 import time
 import os
 from os.path import join, getsize
-import numpy as np
 import pymzml
-import matplotlib.pyplot as plt
 import json
 import socket, ssl
 import datetime
 import configparser
+import time
 
 #read config file
 config = configparser.ConfigParser()
@@ -35,6 +34,9 @@ organisation_id = config.get('section1','organisation_id')
 client = socket.socket()
 #load the self-signed crtificate
 client = ssl.wrap_socket(client,ca_certs="cert.pem",cert_reqs=ssl.CERT_REQUIRED)  
+
+address = socket.gethostbyname(address.strip())
+print (address)
 # connect to the server
 client.connect((address,port))
 
@@ -47,39 +49,12 @@ if recv_msg == 'valid':
     print('connected!')
 elif recv_msg == 'wrong':
     print ('wrong password!')
+    time.sleep(5)
+    exit()
 elif recv_msg == 'noExist':
     print('instrument does not exist!')
-
-# send user's name and read the result from the server
-# def usernameResult():
-#     while True:
-#
-#         client.sendall(('instrument name:' + instrument).encode())
-#
-#         recv_msg = client.recv(1024).decode()
-#         if recv_msg == 'valid':
-#             break
-#         else:
-#             print('Wrong instrument name, please try again')
-#             continue
-# # send user's password and read the result from the server
-# def passwordResult():
-#     while True:
-#
-#         client.sendall(('password:' + password).encode())
-#         recv_msg = client.recv(1024).decode()
-#         if recv_msg == 'valid':
-#             print('valid user')
-#             break
-#         else:
-#             print('Wrong password, please try again')
-#             continue
-# print('checking user information')
-# usernameResult()
-# passwordResult()
-
-
-
+    time.sleep(5)
+    exit()
 
 #send json file to the server
 def sendFile(file_path, name):
@@ -119,11 +94,10 @@ class FileEventHandler(FileSystemEventHandler):
         mzmlpath = jfile_path+"\\"+mzmlName 
         msrun = pymzml.run.Reader(mzmlpath, obo_version = '3.71.0') 
         times = msrun['TIC'].mz
-		
+
         intensities = msrun['TIC'].i
         length =  max(times) - min(times)
         delta_time=datetime.timedelta(seconds=length)
-        # actual_start_time=actual_end_time-delta_time
         js['actual start time']=str(actual_start_time)
         js['actual end time']=str(actual_end_time)
         js['start time']=min(times)
@@ -133,43 +107,7 @@ class FileEventHandler(FileSystemEventHandler):
         js['organisation_id']=organisation_id
         
         msrun = pymzml.run.Reader(mzmlpath, obo_version = '3.71.0')
-         # user defined
-        # config.read('config.ini')
-        # eicTargets = json.loads(config.get('section4','EIC_targets'))
-        # eicTol = 0.03 # user defined
-        # results = []
-        # for eicTarget in eicTargets:
-        #     results.append( {
-        #         'target': eicTarget,
-        #         'RTs' : [], # list to hold retention times
-        #         'ints' :  [], # list to hold intensities
-        #         'lowerLimit' : eicTarget - eicTol,
-        #         'upperLimit' : eicTarget + eicTol
-        #         }
-        #     )
-        #
-        # for spectrum in msrun:
-        #     try:
-        #         time = spectrum['scan start time']
-        #     except:
-        #         break
-        #     if spectrum['ms level'] != 1: continue
-        #     mzs = np.asarray(spectrum.mz,dtype=np.float64)
-        #     ints = np.asarray(spectrum.i,dtype=np.float64)
-        #     for target in results:
-        #         lowerLimit = target['lowerLimit']
-        #         upperLimit = target['upperLimit']
-        #         mask = np.where( (mzs > lowerLimit) & (mzs < upperLimit) )
-        #         eicInts = ints[mask]
-        #         target['RTs'].append(time)
-        #         target['ints'].append(np.sum(eicInts))
-        # for target in results:
-        #     plt.plot(target['RTs'], target['ints'])
-        # #plt.show()
-        # js['EIC']=results
-        #print(js)
         js_final=json.dumps(js)
-        #print(js_final)
         file=open(jfile_pathname,'w')
         file.write(js_final)
         file.close()

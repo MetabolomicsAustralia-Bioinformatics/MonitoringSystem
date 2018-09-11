@@ -1,32 +1,48 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="container" style="width: 20em">
-<form method="POST" class="middle">
+<div class="container" style="width: 25em">
+{# <div class="col">#}
+{#    <div class="row">#}
+        <br>
+        <br>
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+{#    </div>#}
+{#    <div class="row">#}
+
+<div class = "loginForm rounded">
+<form method="POST">
 {# This hidden_tag is a CSRF security feature. #}
     {{ form.hidden_tag() }}
   <div class="form-group">
       {{ form.email.label() }}
       {{ form.email(class="form-control",placeholder="Enter email") }}
 
-{#    <label for="exampleInputEmail1">Email address</label>#}
-{#    <input type="email"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">#}
-{#    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>#}
   </div>
   <div class="form-group">
      {{ form.password.label() }}
-{#      <label for="exampleInputPassword1">Password</label>#}
      {{ form.password(class="form-control", placeholder="Password") }}
-{#      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">#}
   </div>
-{#  <div class="form-group form-check">#}
-{#    <input type="checkbox" class="form-check-input" id="exampleCheck1">#}
-{#    <label class="form-check-label" for="exampleCheck1">Check me out</label>#}
-{#  </div>#}
    {{ form.submit(class="btn btn-primary") }}
-{#    <button type="submit" class="btn btn-primary">Submit</button>#}
 </form>
+     {% with messages = get_flashed_messages() %}
+  {% if messages %}
+      <br>
+      <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+    </div>
 </div>
+
+
 {% endblock %}
 
 

@@ -5,6 +5,11 @@ body > * { text-align: left; }
         you can add this text-align: left property to all elements
         manually */
 
+.flashes         { background: #cee5F5; padding: 0.5em;
+                  border: 1px solid #aacbe2;
+                font-family: "Lora";
+    font-size: 15px ;
+}
 
 .cent {
     padding-top: 17px;
@@ -144,6 +149,11 @@ a [class*=" icon-"] {
     padding-left: 27%;
 }
 
+.loginForm{
+    /*padding: 3em;*/
+    /*border: 8px solid ;*/
+}
+
 #welcome {
     margin: 60px 30px auto auto;
     text-shadow: 4px 4px 4px #aaa;
@@ -160,6 +170,7 @@ a [class*=" icon-"] {
 
 body {
     font-family: 'Lora';
+    /*padding-top:70px;*/
 
     /*background: lightgray url("images/bio21.jpg");*/
 

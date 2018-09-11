@@ -64,18 +64,16 @@ class Sample(db.Model):
 
     o_id = db.Column(db.Integer)
     instrument = db.Column(db.VARCHAR(128))
-    __table_args__ = (ForeignKeyConstraint([o_id, instrument],
+    __table_args__ = (ForeignKeyConstraint((o_id, instrument),
                                            [Instrument.o_id, Instrument.name]),
                       {})
     actual_start = db.Column(db.DateTime, nullable=False)
     actual_end = db.Column(db.DateTime, nullable=False)
-    length = db.Column(db.Text)
 
 
-    def __init__(self, o_id, name, instrument, actual_start, actual_end,length):
+    def __init__(self, o_id, name, instrument, actual_start, actual_end):
         self.o_id = o_id
         self.name = name
         self.instrument = instrument
         self.actual_start = actual_start
         self.actual_end = actual_end
-        self.length = length
