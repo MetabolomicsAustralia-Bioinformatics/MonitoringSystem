@@ -19,12 +19,9 @@ def login():
         email = Admin.query.filter_by(email=form.email.data).first()
         # Check that the user was supplied and the password is right
         # The verify_password method comes from the User object
-        # https://stackoverflow.com/questions/2209755/python-operation-vs-is-not
-
         try:
             if email.check_password(form.password.data) and admin is not None:
                 #Log in the user
-
                 login_user(email)
                 flash('Logged in successfully.')
 
@@ -38,6 +35,9 @@ def login():
 
                 # return redirect(next)
                 return redirect(next)
+            else:
+                flash("Incorrect Email or password.")
+                flash("Please try again")
         except:
             flash("Incorrect Email or password.")
             flash("Please try again")
