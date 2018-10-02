@@ -5,15 +5,11 @@
 
                 <li id="ins_menu"><a href="#togglePage" class="collapsed" data-toggle="collapse"  style="color:white">
                     Select Instrument <i class="fas fa-angle-down pull-right" ></i>
-                    {#                        <i class="fas fa-angle-up pull-right"></i>#}
                 </a>
                 </li>
-{#                    <div>#}
-
                     {% for instrument in all_instruments %}
                         <li class="ins"><a data-name='{{ instrument }}' class="ins_select"
                                href="#">{{ instrument }}</a></li>
-                        {#                                 <option value={{ instrument }}> {{ instrument }}</option>#}
                     {% endfor %}
 
         </ul>

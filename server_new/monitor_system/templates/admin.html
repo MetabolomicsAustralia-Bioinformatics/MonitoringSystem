@@ -2,17 +2,22 @@
 
 {% block content %}
     <div class="jumbotron">
-        <div align="center">
-        <h1>admin page!</h1>
+        <div class="container">
+            <br>
+            <br>
+        <h1>Admin Page</h1>
             <p>Hello, here are the current organisations and instruments: </p>
 
 
-     <table border="1">
+     <table class="table table-striped">
+     <thead>
      <tr>
-     <th>ID</th>
-         <th>name</th>
-         <th>instrument</th>
+     <th scope="col">ID</th>
+         <th scope="col">name</th>
+         <th scope="col">instrument</th>
      </tr>
+     </thead>
+     <tbody>
         {% for organisation in all_organisations %}
             <tr><td>{{ organisation[0] }}</td>
                 <td>{{ organisation[1] }}</td>
@@ -23,15 +28,18 @@
                 </td>
             </tr>
         {% endfor %}
+     </tbody>
     </table>
 
     <ul>
         <br>
         <br>
-    <li><a href="{{ url_for('admin.register') }}">Register</a></li>
+
+{#    <li><a href="{{ url_for('admin.register') }}">Register</a></li>#}
     </ul>
+        <a class="button btn btn-success" href="{{ url_for('admin.register') }}">Register</a>
     </div>
+{#    </div>#}
+
     </div>
-
-
 {% endblock %}

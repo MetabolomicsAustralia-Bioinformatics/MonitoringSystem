@@ -1,21 +1,33 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="container">
-{#        <div class="jumbotron">#}
-        <div class="textCenter"><h1 id="welcome"> Welcome! </h1>
-        <div id="intro" class="textCenter"><p>This is a web interface for the Real-time Instrument Monitor </p></div>
-{#    </div>#}
+
+    <div class = "homepage" style="height: 30em">
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+        <div class="container homepageText">
+            <h1 id="welcome">Welcome! </h1>
+           <p id="intro">This is a web interface for the Real-time Instrument Monitor</p>
         </div>
 
-    <div style="opacity: 0.6">
-        <a href="{{ url_for("core.detail") }}" >
-            <img class="cent" src="https://www.alumni.unimelb.edu.au/sites/default/files/pictures/6G_institutescolleges_bio21.jpg" alt="">
+    </div>
 
+
+        <a href="{{ url_for("core.details",o_id=1) }}" >
+            <img class="logoImg" src="https://www.alumni.unimelb.edu.au/sites/default/files/pictures/6G_institutescolleges_bio21.jpg"/>
         </a>
-    </div>
 
-    </div>
+     <a href="{{ url_for("core.details",o_id=2) }}" >
+            <img class="logoImg" src=" https://www.innovation.cafe/au/wp-content/uploads/sites/2/2011/02/UQ-logo.jpg"/>
+        </a>
 
 
+    <script>
+    $('img').each(function(){
+  $(this).attr('src', $(this).attr('delayedsrc'));
+});
+    </script>
 {% endblock %}

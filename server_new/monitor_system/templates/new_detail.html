@@ -4,11 +4,18 @@
     <script src="{{ url_for('static',filename='echarts.js') }}"></script>
 
         <div id="detailCenter" class="jumbotron jumbotron-fluid"  style="height: 15em;">
-                <h1 class="display-4">details</h1>
-                <p class="lead">some introduction etc. blah blah blah...</p>
+            <br>
+            <br>
+            <p style="font-size: 30px; font-weight: bold;">Instrument Usage Details</p>
+
+            <br>
+
 
             <section id="timePicker">
             <div id="span" class="btn-group btn-group-toggle" data-toggle="buttons" style="margin-bottom:13px">
+                 <label id="1day" for="1day" class="btn btn-secondary choice" data-span="1day">
+                    <input id="1day" type="radio" name="span"  autocomplete="off"> 1 day
+                  </label>
                   <label id="default" for="1week" class="btn btn-secondary choice" data-span="1week">
                     <input id="1week" type="radio" name="span"  autocomplete="off"> 1 week
                   </label>
@@ -76,8 +83,13 @@
     </div>
     </section>
 
-   <section id="graph"></section>
+   <section id="graph">
+        <div style="width: 625px;height:350px; float:left; margin-left: 8em; margin-top: 8em; padding-left:20px; text-align: left">
 
+            <p style="padding-left: 8em">1. Pick the single or multiple instrument(s).<br>2. The default span is the previous one week.<br>
+                3. Choose a time span if needed.</p>
+        </div>
+    </section>
   <script src="{{ url_for('static',filename='select.js') }}"></script>
 
 {% endblock %}

@@ -1,3 +1,20 @@
+
+:root:before {
+  /* partial fallback */
+  background-image: url(images/photo-1520607162513-77705c0f0d4a.jpg);
+  visibility: hidden;
+  position: absolute;
+  left: -999em;
+}
+
+.homepage {
+    position: relative;
+    background-image: url(images/photo-1520607162513-77705c0f0d4a.jpg);
+    background-size: 100%;
+}
+
+
+
 body { text-align: center; }
      /* center all items within body, this property is inherited */
 body > * { text-align: left; }
@@ -11,26 +28,15 @@ body > * { text-align: left; }
     font-size: 15px ;
 }
 
-.cent {
-    padding-top: 17px;
-    padding-bottom: 14px;
-    width:80%;
-    margin:0 10%;
+.logoImg {
+    width:60%;
+    margin:1% 0;
     border-radius:13%;
-    height: 220px;
+    height: 210px;
+    border:0.5px solid #4b6280
 }
 
-/*#parent {*/
-   /*display: table;*/
-   /*height: 100%!important;*/
-    /*width: 100%!important;*/
-/*}*/
-
 .middle {
-    /*display: table-cell;*/
-   /*text-align: center;*/
-   /*vertical-align: middle;*/
-    /*float: none!important;*/
     display: inline-block!important;
    margin-left: auto;
     margin-right: auto;
@@ -93,9 +99,7 @@ ul {
 .pull-right {
   float: right;
 }
-/*.collapse {*/
-    /*position: relative;*/
-/*}*/
+
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
@@ -135,7 +139,7 @@ a [class*=" icon-"] {
     /*padding: ;*/
     /*margin:auto;*/
     float:left;
-    height: 69%;
+    height: 60%;
     width: 13em;
 
     /*padding: auto*/
@@ -149,13 +153,7 @@ a [class*=" icon-"] {
     padding-left: 27%;
 }
 
-.loginForm{
-    /*padding: 3em;*/
-    /*border: 8px solid ;*/
-}
-
 #welcome {
-    margin: 60px 30px auto auto;
     text-shadow: 4px 4px 4px #aaa;
     font-size: 4.5em;
     font-family: 'Lobster', cursive;
@@ -168,18 +166,37 @@ a [class*=" icon-"] {
     /*margin-left: 20px;*/
 }
 
+
 body {
-    font-family: 'Lora';
+/*font-family: Raleway, sans-serif*/
+    /*font-family: 'Crimson Text', serif;*/
+    font-family: 'Lora',serif;
+
     /*padding-top:70px;*/
 
     /*background: lightgray url("images/bio21.jpg");*/
-
 }
+
+.homepageText {
+    background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+    text-align: center;
+
+  line-height: 1;
+  /*backdrop-filter: blur(10px);*/
+  backdrop-filter: blur(10px) grayscale(30%);
+  -webkit-backdrop-filter: blur(10px) grayscale(30%);
+  max-width: 50%;
+  max-height: 50%;
+  /*padding: 20px 40px;*/
+    /*backdrop-filter: invert();*/
+}
+
 
 
 #intro {
     font-size: 30px;
-    ligh-weight: bolad;
+    font-weight: bold;
     font-family: 'Lobster', cursive;
     padding-bottom: 20px;
 }
@@ -188,7 +205,7 @@ body {
     text-align: center;
     height:100em;
     /*width:100%;*/
-    padding-top:2em;
+    padding-top:0.2em;
     /*margin-left:0;*/
 }
 

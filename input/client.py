@@ -136,7 +136,7 @@ class FileEventHandler(FileSystemEventHandler):
                         actual_end_time=datetime.datetime.now()#get the actual end time of generating mzML                        
                         break
                 #every 5 minutes    
-                time.sleep(1)    
+                time.sleep(30)
                 
             #put mzml file in the file that contain this code file        
             cmd=msconvert_path + ' ' + convertname+ ' -o '+A_path

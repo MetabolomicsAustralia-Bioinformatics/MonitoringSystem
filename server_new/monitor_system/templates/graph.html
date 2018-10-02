@@ -1,9 +1,8 @@
     <script src="{{ url_for('static',filename='echarts.js') }}"></script>
     <div class="container">
-    <div id="line" style="width: 625px;height:350px; float:left; margin-left: 20px; margin-top: 40px; padding-left:20px "></div>
+    <span id="line" style="width: 625px;height:350px; float:left; margin-top: 40px;"></span>
     <script type="text/javascript" >
         // 基于准备好的dom，初始化echarts实例
-            console.log("{{ ins_data }}");
             var myChart = echarts.init(document.getElementById('line'));
             // 指定图表的配置项和数据
             var option = {
@@ -122,7 +121,7 @@
 
     </script>
 
-        <div id="pie" style="width: 345px;height:335px;margin-left:0;float: left; margin-top:60px; "></div>
+        <span id="pie" style="width: 345px;height:335px;margin-left:0;float: left; margin-top:60px; "></span>
     <script>
         // 绘制图表。
         echarts.init(document.getElementById('pie')).setOption({

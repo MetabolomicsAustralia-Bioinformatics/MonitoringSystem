@@ -12,9 +12,10 @@
     <link rel="stylesheet"  href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 {#    font#}
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-
+   <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 {#    sidebar#}
 {#    <link type="text/css" href="{{ url_for('static', filename='bootstrap2.min.css') }}" rel="stylesheet">#}
 {#        <link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">#}
@@ -28,9 +29,11 @@
 </head>
 <body>
 
-<!--navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family: Raleway, sans-serif">
+
+    <div class="container">
 {#    add icon#}
   <a class="navbar-brand" href="#" > <i class="fas fa-flask" id="icon"></i> </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,14 +54,32 @@
         <li class="nav-item">
         <a class="nav-link" href="{{ url_for("admin.login") }}">Admin <span class="sr-only">(current)</span></a>
       </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
+        </ul>
+</div>
 
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 
-    </form>
-  </div>
+
+     <ul class="navbar-nav navbar-right">
+         <li><span class="navbar-text font-italic">
+             Welcome
+            </span>
+
+          {% if current_user.is_authenticated %}
+     <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle font-italic" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ current_user.username }}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Edit Profile</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{{ url_for('admin.logout') }}">Sign out</a>
+        </div>
+      </li>
+          {% endif %}
+
+       </ul>
+</div>
+
 </nav>
 
 

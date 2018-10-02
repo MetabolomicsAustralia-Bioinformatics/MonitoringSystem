@@ -3,7 +3,7 @@ from monitor_system import db
 from monitor_system.models import Organisation,Instrument, Admin
 from monitor_system.admin.forms import LoginForm
 from monitor_system.admin.forms import Ogran_RegistrationForm,Ins_RegistrationForm
-from flask_login import login_user, login_required
+from flask_login import login_user, login_required, logout_user, current_user
 
 
 
@@ -13,17 +13,20 @@ admin = Blueprint('admin',__name__)
 
 @admin.route('/login', methods=['GET', 'POST'])
 def login():
-    form = LoginForm()
-    if form.validate_on_submit():
-        # Grab the user from our User Models table
-        email = Admin.query.filter_by(email=form.email.data).first()
-        # Check that the user was supplied and the password is right
-        # The verify_password method comes from the User object
-        try:
+    try:
+        user = current_user.username
+        return redirect(url_for('admin.view'))
+    except:
+        form = LoginForm()
+        if form.validate_on_submit():
+            # Grab the user from our User Models table
+            email = Admin.query.filter_by(email=form.email.data).first()
+            # Check that the user was supplied and the password is right
+            # The verify_password method comes from the User object
+            # try:
             if email.check_password(form.password.data) and admin is not None:
                 #Log in the user
                 login_user(email)
-                flash('Logged in successfully.')
 
                 next = request.args.get('next')
 
@@ -38,11 +41,11 @@ def login():
             else:
                 flash("Incorrect Email or password.")
                 flash("Please try again")
-        except:
-            flash("Incorrect Email or password.")
-            flash("Please try again")
+            # except:
+            #     flash("Incorrect Email or password.")
+            #     flash("Please try again")
 
-    return render_template('login.html', form=form)
+        return render_template('login.html', form=form)
 
 
 @admin.route('/view')
@@ -87,3 +90,8 @@ def register():
 
 
     return render_template('register.html', organ_form=organ_form, ins_form=ins_form)
+
+@admin.route("/logout")
+def logout():
+    logout_user()
+    return redirect(url_for('core.index'))

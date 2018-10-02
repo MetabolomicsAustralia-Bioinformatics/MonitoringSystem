@@ -2,16 +2,10 @@
 
 $("#ins_menu").click(function(event){
     $(".ins").toggleClass("not_show");
-    // $(".ins_select").fadeOut(500,function(){})
 });
 
 
 var selected_instruments = [];
-
-// app.datePicker.on("submit",function(e){
-//        e.preventDefault();
-//    });
-
 var name = '';
 var app = {
     single: $("button#single"),
@@ -27,14 +21,12 @@ var app = {
     sidebar: $("section#sidebar"),
     confirm: $("button#confirm"),
     datePicker: $("#datePicker"),
-    // multiDatePicker: $("#multi_datePicker")
 };
 
 app.init = function(){
     app.ins.on("click",function(){
     //    从路径中取page这个data
     name = $(this).data('name');
-    // console.log(name);
     app.loadSingleGraph(name);
     console.log("clicked instrument");
     app.span.removeClass('active');
@@ -48,8 +40,6 @@ app.init = function(){
     app.multi_ins.on("click",function(){
     //    从路径中取page这个data
     mul_name = $(this).data('dt');
-    // console.log("111111111111111111");
-    // console.log(selected_instruments.indexOf(mul_name));
     //store selected instrument names into an array
     if(selected_instruments.indexOf(mul_name)=== -1){
         console.log("new");
@@ -59,11 +49,8 @@ app.init = function(){
     }
     //click a selected instrument will cancel the clicked status
     else{
-       // console.log("exist!");
-       // console.log(selected_instruments);
         $(this).removeClass('active_ins');
         var index = selected_instruments.indexOf(mul_name);
-        // console.log("delete: "+index + selected_instruments[index]);
         selected_instruments.splice(index,1);
     }
     });
@@ -79,16 +66,8 @@ app.init = function(){
 
      app.span.on("click",function() {
          var option = $(this).data('span');
- //
- //         $('a.active_ins').each(function(){
- //         var ins_name = $(this).data('name');
- //         sele.push(ins_name);
- //        console.log(ins_name);
- // });
+
          if (selected_instruments.length > 0) {
-             // console.log("11111111111111selcted: ");
-             // console.log(selected_instruments);
-             // console.log(option);
              app.loadMultiSpanGraph(selected_instruments,option);
          }
          else {
@@ -118,7 +97,6 @@ app.init = function(){
     });
 
     app.single.on("click",function(){
-        // console.log("single");
         app.loadSingleSidebar();
         $(this).addClass("active");
         app.multiple.removeClass("active");
@@ -285,39 +263,3 @@ app.loadDefaultMultiGraph = function(selected_instruments) {
             app.putContent("Invalid Input!")}
         });
 };
-
-// app.loadMultiTime = function() {
-//     $.ajax({
-//         type:'GET',
-//         url:'/timePicker',
-//           // dataType:'json',
-//         cache:false,
-//          // traditional:true,
-//         data: {time: "multi"},
-//         success:function(data){
-//             // console.log(name);
-//             // console.log("hi!!!in the multi ins loadpage");
-//             app.putTimePicker(data);
-//             },
-//          error: function(){
-//             app.putTimePicker("Invalid Input!")}
-//         });
-// };
-
-// app.loadSingleTime = function() {
-//     $.ajax({
-//         type:'GET',
-//         url:'/timePicker',
-//           // dataType:'json',
-//         cache:false,
-//          // traditional:true,
-//         data: {time: "single"},
-//         success:function(data){
-//             // console.log(name);
-//             console.log("hi!!!in the single ins loadpage");
-//             app.putTimePicker(data);
-//             },
-//          error: function(){
-//             app.putTimePicker("Invalid Input!")}
-//         });
-// };

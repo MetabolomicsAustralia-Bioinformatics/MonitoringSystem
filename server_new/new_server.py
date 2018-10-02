@@ -6,6 +6,23 @@ from monitor_system.models import Sample, Instrument
 from werkzeug.security import check_password_hash
 import pymysql
 pymysql.install_as_MySQLdb()
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate, MigrateCommand
+
+
+# configure db
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:1025@localhost:3306/monitoring_system'
+# app.config[
+#     'SQLALCHEMY_DATABASE_URI'] = 'postgres://giuuhvimvuhrot:7592aee111ef95e22a60c960d02ff83ea391a4f7943c47fb2143557983337d38@ec2-50-17-194-186.compute-1.amazonaws.com:5432/dfnrndu27hlrd3'
+
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+# db = SQLAlchemy(app)
+db.create_all()
+migrate = Migrate(app, db)
 
 # create SSL socket layer
 context = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
@@ -13,7 +30,7 @@ context.load_cert_chain(certfile="cert.pem", keyfile="key.pem")
 # create socket
 server = socket.socket()
 
-server.bind(("192.168.1.114", 8888))
+server.bind(("127.0.0.1", 8888))
 server.listen(5)
 
 print("waiting for the client")
@@ -81,30 +98,34 @@ def receiveFile(conn):
 
 def connect(sock, addr):
     print('Accept new connection from %s:%s...' % addr)
-    connStream = context.wrap_socket(sock, server_side=True)
     try:
-        while True:
-            data = connStream.recv(1024).decode()
-            if not data:
-                continue
-            else:
-                data = json.loads(data)
-                o_id = data['organisation_id']
-                instrument = data['instrument']
-                password = data['password']
-                result = checkValid(o_id,instrument,password,connStream)
+        connStream = context.wrap_socket(sock, server_side=True)
+        try:
+            while True:
+                data = connStream.recv(1024).decode()
+                if not data:
+                    continue
+                else:
+                    data = json.loads(data)
+                    o_id = data['organisation_id']
+                    instrument = data['instrument']
+                    password = data['password']
+                    result = checkValid(o_id, instrument, password, connStream)
 
-                if result != "valid":
-                    connStream.close()
-                    print ("client not valid")
-                break
-        print('receiving, please wait for a second ...')
-        receiveFile(connStream)
-        print('receive finished')
+                    if result != "valid":
+                        connStream.close()
+                        print("client not valid")
+                    break
+            print('receiving, please wait for a second ...')
+            receiveFile(connStream)
+            print('receive finished')
+
+        except:
+            connStream.close()
+            print('The client %s:%s has been closed' % addr)
 
     except:
-        connStream.close()
-        print('The client %s:%s has been closed' % addr)
+        print ("unknown connection")
 
 
 while True:
