@@ -10,19 +10,18 @@
              <br>
         <div class="container homepageText">
             <h1 id="welcome">Welcome! </h1>
-           <p id="intro">This is a web interface for the Real-time Instrument Monitor</p>
+           <p id="intro">This is a Web Interface for the Real-time Instrument Monitoring System</p>
         </div>
 
     </div>
 
+    {% for organisation in all_organisations %}
 
-        <a href="{{ url_for("core.details",o_id=1) }}" >
-            <img class="logoImg" src="https://www.alumni.unimelb.edu.au/sites/default/files/pictures/6G_institutescolleges_bio21.jpg"/>
+        <a title="{{ organisation[0] }}" href="{{ url_for("core.details",o_name=organisation[0]) }}">
+            <img class="logoImg" src="{{ url_for('static', filename='organisation_pics/' + organisation[1]) }}"/>
         </a>
 
-     <a href="{{ url_for("core.details",o_id=2) }}" >
-            <img class="logoImg" src=" https://www.innovation.cafe/au/wp-content/uploads/sites/2/2011/02/UQ-logo.jpg"/>
-        </a>
+    {% endfor %}
 
 
     <script>

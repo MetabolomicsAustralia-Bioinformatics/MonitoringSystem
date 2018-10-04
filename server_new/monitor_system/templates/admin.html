@@ -19,7 +19,8 @@
      </thead>
      <tbody>
         {% for organisation in all_organisations %}
-            <tr><td>{{ organisation[0] }}</td>
+            <tr class='clickable-row' data-href="{{ url_for("admin.organ_page",o_name=organisation[1]) }}">
+                <td>{{ organisation[0] }}</td>
                 <td>{{ organisation[1] }}</td>
                 <td>
                     {% for instrument in organisation[2] %}
@@ -35,11 +36,13 @@
         <br>
         <br>
 
-{#    <li><a href="{{ url_for('admin.register') }}">Register</a></li>#}
+
     </ul>
         <a class="button btn btn-success" href="{{ url_for('admin.register') }}">Register</a>
     </div>
-{#    </div>#}
+
 
     </div>
+
+    <script src="{{ url_for('static',filename='select.js') }}"></script>
 {% endblock %}

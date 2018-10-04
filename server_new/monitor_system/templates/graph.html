@@ -2,13 +2,13 @@
     <div class="container">
     <span id="line" style="width: 625px;height:350px; float:left; margin-top: 40px;"></span>
     <script type="text/javascript" >
-        // 基于准备好的dom，初始化echarts实例
+
             var myChart = echarts.init(document.getElementById('line'));
-            // 指定图表的配置项和数据
+
             var option = {
                 grid:{
                   containLabel:true,
-                    {#right:'1%'#}
+
                 },
                 title: {
                     text: 'Instrument \n{{ selected_instrument }}',
@@ -18,7 +18,7 @@
                 {#tooltip: {},#}
                  toolbox: {
                     feature: {
-                        {#dataView: {show: true, readOnly: false},#}
+
                         restore: {show: true},
                         saveAsImage: {show: true},
                         formatter: function (value, index) {
@@ -31,18 +31,18 @@
                 legend: {
                     data: ['running status']},
                 dataZoom: [
-                    {   // 这个dataZoom组件，默认控制x轴。
-                        type: 'slider', // 这个 dataZoom 组件是 slider 型 dataZoom 组件
-                        start: 0,      // 左边在 10% 的位置。
-                        end: 100,    // 右边在 60% 的位置。
+                    {
+                        type: 'slider',
+                        start: 0,
+                        end: 100,
                         filterMode:'none',
                         realtime:true,
 
                     },
-                     {   // 这个dataZoom组件，也控制x轴。
-            type: 'inside', // 这个 dataZoom 组件是 inside 型 dataZoom 组件
-            start: 0,      // 左边在 10% 的位置。
-            end: 100         // 右边在 60% 的位置。
+                     {
+            type: 'inside',
+            start: 0,
+            end: 100
         }
                 ],
                 xAxis: {
@@ -69,7 +69,7 @@
 
                     },
                     splitNumber: 10,
-                    {#minInterval: 3600*1000,#}
+
 
                     labels: {
                         rotation: 90,
@@ -78,7 +78,6 @@
                 },
                 yAxis: [{
                     max:1.5,
-                    {#splitLine:{show: false},#}
                     type: 'value',
                     splitNumber: 3,
                     axisLabel: {
@@ -114,7 +113,7 @@
                 }]
             };
 
-            // 使用刚指定的配置项和数据显示图表。
+
             myChart.setOption(option, true);
 
     console.log({{ ins_data['data'] }})
@@ -123,7 +122,7 @@
 
         <span id="pie" style="width: 345px;height:335px;margin-left:0;float: left; margin-top:60px; "></span>
     <script>
-        // 绘制图表。
+
         echarts.init(document.getElementById('pie')).setOption({
 
 
@@ -133,7 +132,7 @@
                 data: [
                     {name: 'Uptime', value: {{ins_data['uptime']}}},
                     {name: 'Downtime', value: {{ins_data['downtime']}}},
-                    {#{name: 'C', value: 1919}#}
+
                 ],
                 label: {
                     show: true,

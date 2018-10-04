@@ -1,6 +1,9 @@
 
+    $(".clickable-row").click(function() {
+        window.location = $(this).data("href");
+    });
 
-$("#ins_menu").click(function(event){
+$("#ins_menu").click(function(){
     $(".ins").toggleClass("not_show");
 });
 
@@ -122,7 +125,7 @@ app.putSidebar = function(sidebar) {
 };
 
 app.loadSingleGraph = function(name){
-      //发送data page，获取新render的html
+
       $.ajax({
         type:'GET',
           url:'/singleGraph',
@@ -145,8 +148,7 @@ app.loadSpanGraph = function(name,span){
         cache:false,
         data: {name: name, span: span},
         success:function(data){
-            // console.log(name);
-            // console.log("hi!!!in the span loadpage");
+
             app.putContent(data);
             },
          error: function(){
@@ -158,12 +160,11 @@ app.loadDatePage = function(name,start_time,end_time){
      $.ajax({
         type:'GET',
           url:'/singleGraph',
-          // dataType:'json',
+
         cache:false,
         data: {name: name, start_time: start_time, end_time: end_time},
         success:function(data){
-            // console.log(name);
-            // console.log("hi!!!in the dates loadpage");
+
             app.putContent(data);
             },
          error: function(){
@@ -181,8 +182,7 @@ app.loadMultiDatePage = function(selected_instruments,start_time,end_time){
             cache: false,
             data: {selected_instruments: instruments, start_time: start_time, end_time: end_time},
             success: function (data) {
-                // console.log(selected_instruments);
-                // console.log("hi!!!in the multi dates loadpage");
+
                 app.putContent(data);
             },
             error: function () {
@@ -250,13 +250,9 @@ app.loadDefaultMultiGraph = function(selected_instruments) {
      $.ajax({
         type:'GET',
         url:'/defaultMultiGraph',
-          // dataType:'json',
         cache:false,
-         // traditional:true,
         data: {selected_instruments:instruments},
         success:function(data){
-            // console.log(name);
-            // console.log("hi!!!in the multi ins loadpage");
             app.putContent(data);
             },
          error: function(){

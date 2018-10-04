@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+  <div align='center'>
+    <h3>This is the page for <span style="font-style: italic;font-weight: bold ">{{organisation[0]}}</span></h3>
+    <img class="logoImg" align='center' src="{{ url_for('static', filename='organisation_pics/' + organisation[1]) }}">
+  </div>
+</div>
+
+<div class="container" style="width: 30em">
+  <form  method="POST" action = "" enctype="multipart/form-data">
+{#  This hidden_tag is a CSRF security feature.#}
+        {{ update_o_form.hidden_tag() }}
+        <div class="form-group">
+        {{ update_o_form.organ_name.label(class="form-group") }}
+        {{ update_o_form.organ_name(class="form-control") }}<br>
+        </div>
+
+        <div class="form-group">
+        {{ update_o_form.picture.label(class="form-group") }}
+        {{ update_o_form.picture(class="form-control-file") }}
+        </div>
+
+        <br>
+
+
+        <div class="form-group">
+        {{ update_o_form.submit(class="btn btn-primary") }}
+        </div>
+
+
+  </form>
+ {% with messages = get_flashed_messages() %}
+  {% if messages %}
+
+      <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+</div>
+
+{% endblock content %}

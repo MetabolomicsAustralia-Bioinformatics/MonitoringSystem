@@ -37,8 +37,9 @@ class Organisation(db.Model):
     instrument = db.relationship('Instrument', backref='Organisation', lazy='dynamic')
     profile_image = db.Column(db.String(64), nullable=False, default='default_profile.png')
 
-    def __init__(self, name):
+    def __init__(self, name,profile_image):
         self.name = name
+        self.profile_image = profile_image
 
 
 

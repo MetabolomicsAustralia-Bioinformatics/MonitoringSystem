@@ -1,9 +1,10 @@
 from flask import render_template,request,Blueprint,flash, redirect, url_for
 from monitor_system import db
 from monitor_system.models import Organisation,Instrument, Admin
-from monitor_system.admin.forms import LoginForm
+from monitor_system.admin.forms import LoginForm, UpdateOrganisationForm
 from monitor_system.admin.forms import Ogran_RegistrationForm,Ins_RegistrationForm
 from flask_login import login_user, login_required, logout_user, current_user
+from monitor_system.admin.picture_handler import add_pic
 
 
 
@@ -58,8 +59,6 @@ def view():
         instruments = [instrument.name for instrument in Instrument.query.filter(Instrument.o_id==o_id).all()]
         all_organisations.append((o_id, o_name, instruments))
 
-    # all_organisations = {(organisation.id,organisation.name) for organisation in Organisation.query.all()}
-    print(all_organisations)
     return render_template('admin.html', all_organisations=all_organisations)
 
 
@@ -81,7 +80,10 @@ def register():
             return redirect(url_for('admin.view'))
 
         elif organ_form.validate_on_submit():
-            organisation = Organisation(name=organ_form.organ_name.data)
+            # if organ_form.picture.data:
+            organ_name = organ_form.organ_name.data
+            pic = add_pic(organ_form.picture.data, organ_name)
+            organisation = Organisation(organ_name,pic)
 
             db.session.add(organisation)
             db.session.commit()
@@ -91,7 +93,53 @@ def register():
 
     return render_template('register.html', organ_form=organ_form, ins_form=ins_form)
 
+
+@admin.route('/<o_name>', methods=['GET', 'POST'])
+def organ_page(o_name):
+    update_o_form = UpdateOrganisationForm()
+    organisation = Organisation.query.filter(Organisation.name == o_name).first()
+
+    if request.method == "POST":
+        if update_o_form.validate_on_submit():
+
+            if update_o_form.organ_name.data != o_name:
+                # Check if not None for that name
+                if Organisation.query.filter_by(name=update_o_form.organ_name.data).first():
+                    flash('Sorry, that name has been take!')
+                    o_pic = organisation.profile_image
+                    organisation = (o_name, o_pic)
+                    update_o_form.organ_name.data = o_name
+                else:
+                    organisation.name = update_o_form.organ_name.data
+                    if update_o_form.picture.data:
+                        pic = add_pic(update_o_form.picture.data, o_name)
+                        organisation.profile_image = pic
+                    db.session.commit()
+                    flash('Organisation Information Updated')
+                    return redirect(url_for('admin.organ_page', o_name=organisation.name))
+
+            else:
+                if update_o_form.picture.data:
+                    pic = add_pic(update_o_form.picture.data, o_name)
+                    organisation.profile_image = pic
+                    db.session.commit()
+                    flash('Organisation Information Updated')
+                    return redirect(url_for('admin.organ_page', o_name=organisation.name))
+                # o_pic = organisation.profile_image
+                # organisation = (organisation.name, o_pic)
+
+
+                # return render_template('organisation_page.html', organisation=organisation,
+                #                        update_o_form=update_o_form, )
+
+    elif request.method == "GET":
+        o_pic = organisation.profile_image
+        organisation = (o_name,o_pic)
+        update_o_form.organ_name.data = o_name
+    return render_template('organisation_page.html',organisation=organisation,update_o_form=update_o_form,)
+
 @admin.route("/logout")
 def logout():
     logout_user()
     return redirect(url_for('core.index'))
+

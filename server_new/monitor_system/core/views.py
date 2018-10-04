@@ -1,5 +1,5 @@
 from flask import render_template,request,Blueprint, session
-from monitor_system.models import Instrument,Sample
+from monitor_system.models import Instrument,Sample, Organisation
 import time
 from collections import defaultdict
 import datetime
@@ -9,16 +9,18 @@ import simplejson
 core = Blueprint('core',__name__)
 
 
-# all_instruments = []
-
 @core.route('/')
 def index():
-    return render_template("home.html")
 
-@core.route('/<o_id>')
-def details(o_id):
+    all_organisations = [(organisation.name,organisation.profile_image) for organisation in Organisation.query.all()]
 
-    print("o_id: " + o_id)
+    return render_template("home.html",all_organisations=all_organisations)
+
+@core.route('/<o_name>')
+def details(o_name):
+
+    o_id = Organisation.query.filter(Organisation.name==o_name).first().id
+    # print("o_id: " + o_id)
     all_instruments = [instrument.name for instrument in Instrument.query.filter(Instrument.o_id==o_id).all()]
     session['all_instruments'] = all_instruments
 
