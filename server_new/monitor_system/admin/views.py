@@ -93,7 +93,7 @@ def register():
 
     return render_template('register.html', organ_form=organ_form, ins_form=ins_form)
 
-
+@login_required
 @admin.route('/<o_name>', methods=['GET', 'POST'])
 def organ_page(o_name):
     update_o_form = UpdateOrganisationForm()
@@ -125,21 +125,33 @@ def organ_page(o_name):
                     db.session.commit()
                     flash('Organisation Information Updated')
                     return redirect(url_for('admin.organ_page', o_name=organisation.name))
-                # o_pic = organisation.profile_image
-                # organisation = (organisation.name, o_pic)
 
-
-                # return render_template('organisation_page.html', organisation=organisation,
-                #                        update_o_form=update_o_form, )
 
     elif request.method == "GET":
         o_pic = organisation.profile_image
-        organisation = (o_name,o_pic)
+        o_id = organisation.id
+        organisation = (o_name,o_pic,o_id)
         update_o_form.organ_name.data = o_name
     return render_template('organisation_page.html',organisation=organisation,update_o_form=update_o_form,)
 
+
+# delete_organisation
+@admin.route('/<o_name>/delete', methods=['GET','POST'])
+@login_required
+def delete_organisation(o_name):
+
+    organisation = Organisation.query.filter(o_name==Organisation.name).first()
+    db.session.delete(organisation)
+    db.session.commit()
+    flash('Organisation has been deleted')
+    return redirect(url_for('admin.view'))
+
+
+
+
 @admin.route("/logout")
+@login_required
 def logout():
     logout_user()
-    return redirect(url_for('core.index'))
+    return redirect(url_for('core.view'))
 
