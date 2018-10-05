@@ -9,6 +9,7 @@ from monitor_system.admin.picture_handler import add_pic
 admin = Blueprint('admin', __name__)
 
 
+# admin login
 @admin.route('/login', methods=['GET', 'POST'])
 def login():
     try:
@@ -21,19 +22,16 @@ def login():
             email = Admin.query.filter_by(email=form.email.data).first()
             # Check that the user was supplied and the password is right
             # The verify_password method comes from the User object
-            # try:
             if email.check_password(form.password.data) and admin is not None:
                 # Log in the user
                 login_user(email)
 
                 next = request.args.get('next')
 
-                # So let's now check if that next exists, otherwise we'll go to
-                # the welcome page.
+                # check if that next exists, otherwise we'll go to the welcome page.
                 if next == None or not next[0] == '/':
                     next = url_for('admin.view')
 
-                # return redirect(next)
                 return redirect(next)
             else:
                 flash("Incorrect Email or password.")
@@ -42,6 +40,7 @@ def login():
         return render_template('login.html', form=form)
 
 
+# admin views all organisation and instruments infomation
 @admin.route('/view')
 @login_required
 def view():
@@ -55,6 +54,7 @@ def view():
     return render_template('admin.html', all_organisations=all_organisations)
 
 
+# admin register new organisation or instrument
 @admin.route('/register', methods=['GET', 'POST'])
 @login_required
 def register():
@@ -83,6 +83,8 @@ def register():
     return render_template('register.html', organ_form=organ_form, ins_form=ins_form)
 
 
+# view one organisation info
+# update info
 @login_required
 @admin.route('/<o_name>', methods=['GET', 'POST'])
 def organ_page(o_name):
@@ -95,7 +97,6 @@ def organ_page(o_name):
         instrument = (instrument.name, count)
         instruments.append(instrument)
 
-    # instruments = [instrument.name for instrument in Instrument.query.filter(Instrument.o_id == organisation.id).all()]
 
     if request.method == "POST":
         if update_o_form.validate_on_submit():
@@ -146,8 +147,9 @@ def delete_organisation(o_name):
     return redirect(url_for('admin.view'))
 
 
+# admin logout
 @admin.route("/logout")
 @login_required
 def logout():
     logout_user()
-    return redirect(url_for('core.view'))
+    return redirect(url_for('core.index'))

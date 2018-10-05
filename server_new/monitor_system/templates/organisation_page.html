@@ -1,3 +1,5 @@
+{# for administrator's management after log in #}
+
 {% extends "base.html" %}
 {% block content %}
 
@@ -64,7 +66,7 @@
         </div>
 
 
-
+        {# flash massage #}
         {% with messages = get_flashed_messages() %}
             {% if messages %}
 
@@ -81,6 +83,7 @@
 
     <br>
     <hr>
+    {#    table showing current instruments belonged to this organisation #}
     <div class="container" style="width: 30em">
         <table class="table table-bordered table-hover">
             <thead>
@@ -89,19 +92,7 @@
                 <th scope="col">Name</th>
             </tr>
             </thead>
-            {#     <tbody>
-{#        {% for organisation in all_organisations %}
-{#            <tr class='clickable-row' data-href="{{ url_for("admin.organ_page",o_name=organisation[1]) }}">
-{#                <td>{{ organisation[0] }}</td>
-{#                <td>{{ organisation[1] }}</td>
-{#                <td>
-{#                    {% for instrument in organisation[2] %}
-{#                        {{ instrument }}
-{#                    {% endfor %}
-{#                </td>
-{#            </tr>
-{#        {% endfor %}
-{#     </tbody>#}
+
             <tbody>
             {% for instrument in instruments %}
                 <tr>

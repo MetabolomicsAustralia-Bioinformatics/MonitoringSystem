@@ -1,126 +1,116 @@
-    <script src="{{ url_for('static',filename='echarts.js') }}"></script>
-    <div class="container">
+<script src="{{ url_for('static',filename='echarts.js') }}"></script>
+<div class="container">
     <span id="line" style="width: 625px;height:350px; float:left; margin-top: 40px;"></span>
-    <script type="text/javascript" >
+    <script type="text/javascript">
 
-            var myChart = echarts.init(document.getElementById('line'));
+        {#        line graph #}
+        var myChart = echarts.init(document.getElementById('line'));
 
-            var option = {
-                grid:{
-                  containLabel:true,
+        var option = {
+            grid: {
+                containLabel: true,
 
-                },
-                title: {
-                    text: 'Instrument \n{{ selected_instrument }}',
-                    padding: [0,50,50,50],
-                },
-                {#hover#}
-                {#tooltip: {},#}
-                 toolbox: {
-                    feature: {
+            },
+            title: {
+                text: 'Instrument \n{{ selected_instrument }}',
+                padding: [0, 50, 50, 50],
+            },
 
-                        restore: {show: true},
-                        saveAsImage: {show: true},
-                        formatter: function (value, index) {
-                            if (value === 1) {
-                                var text = "running"
-                            }
-                            return text
+            toolbox: {
+                feature: {
+
+                    restore: {show: true},
+                    saveAsImage: {show: true},
+                    formatter: function (value, index) {
+                        if (value === 1) {
+                            var text = "running"
                         }
-                    }},
-                legend: {
-                    data: ['running status']},
-                dataZoom: [
-                    {
-                        type: 'slider',
-                        start: 0,
-                        end: 100,
-                        filterMode:'none',
-                        realtime:true,
-
-                    },
-                     {
-            type: 'inside',
-            start: 0,
-            end: 100
-        }
-                ],
-                xAxis: {
-                    type: 'time',
-                    axixTick: {
-                        show: true,
-                    },
-                    axisLabel: {
-
-                    },
-                    axisPointer: {
-                        show: true
-                    },
-
-                    {#set min 1 sec advance the start time to make sure the first data absorbed in graph#}
-                    {#this is a bug of eCharts#}
-                    min: {{ start_time }} - 1000,
-                    max: {{ end_time }},
-                    dateTimeLabelFormats: {
-                        day: '00:00',
-                        hour: '%H:00',
-                    },
-                    axisLine: {
-
-                    },
-                    splitNumber: 10,
-
-
-                    labels: {
-                        rotation: 90,
-                        step: 2
-                    }
-                },
-                yAxis: [{
-                    max:1.5,
-                    type: 'value',
-                    splitNumber: 3,
-                    axisLabel: {
-                        show: true,
-                        formatter: function (value, index) {
-                            if (value === 1) {
-                                var text = "running"
-                            }
-                            return text
-                        }
+                        return text
                     }
                 }
-                      ],
-                 grid3D: {
-        boxWidth: 200,
-        boxDepth: 80,
-        light: {
-            main: {
-                intensity: 1.2
             },
-            ambient: {
-                intensity: 0.3
+            legend: {
+                data: ['running status']
+            },
+
+            {#zoomable widget#}
+            dataZoom: [
+                {
+                    type: 'slider',
+                    start: 0,
+                    end: 100,
+                    filterMode: 'none',
+                    realtime: true,
+
+                },
+                {
+                    type: 'inside',
+                    start: 0,
+                    end: 100
+                }
+            ],
+            xAxis: {
+                type: 'time',
+                axixTick: {
+                    show: true,
+                },
+                axisLabel: {},
+                axisPointer: {
+                    show: true
+                },
+
+                {#set min 1 sec advance the start time to make sure the first data absorbed in graph#}
+                {#this is a bug of eCharts#}
+                min: {{ start_time }} -1000,
+                max: {{ end_time }},
+                dateTimeLabelFormats: {
+                    day: '00:00',
+                    hour: '%H:00',
+                },
+                axisLine: {},
+                splitNumber: 10,
+
+
+                labels: {
+                    rotation: 90,
+                    step: 2
+                }
+            },
+            yAxis: [{
+                max: 1.5,
+                type: 'value',
+                splitNumber: 3,
+                axisLabel: {
+                    show: true,
+                    formatter: function (value, index) {
+                        if (value === 1) {
+                            var text = "running"
+                        }
+                        return text
+                    }
+                }
             }
-        }
-    },
-                series: [{
-                    name: 'running status',
-                    type: 'line',
-                    step: 'end',
-                    data: {{ ins_data['data'] }},
-                    areaStyle: {}
+            ],
+            series: [{
+                name: 'running status',
+                type: 'line',
+                step: 'end',
+                data: {{ ins_data['data'] }},
+                areaStyle: {}
 
-                }]
-            };
+            }]
+        };
 
 
-            myChart.setOption(option, true);
+        myChart.setOption(option, true);
 
-    console.log({{ ins_data['data'] }})
+        console.log({{ ins_data['data'] }})
 
     </script>
 
-        <span id="pie" style="width: 345px;height:335px;margin-left:0;float: left; margin-top:60px; "></span>
+
+    {#    pie chart#}
+    <span id="pie" style="width: 345px;height:335px;margin-left:0;float: left; margin-top:60px; "></span>
     <script>
 
         echarts.init(document.getElementById('pie')).setOption({

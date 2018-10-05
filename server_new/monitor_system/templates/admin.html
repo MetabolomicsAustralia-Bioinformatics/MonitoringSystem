@@ -5,41 +5,40 @@
         <div class="container">
             <br>
             <br>
-        <h1>Admin Page</h1>
+            <h1>Admin Page</h1>
             <p>Hello, here are the current organisations and instruments: </p>
 
 
-     <table class="table table-striped">
-     <thead>
-     <tr>
-     <th scope="col">ID</th>
-         <th scope="col">name</th>
-         <th scope="col">instrument</th>
-     </tr>
-     </thead>
-     <tbody>
-        {% for organisation in all_organisations %}
-            <tr class='clickable-row' data-href="{{ url_for("admin.organ_page",o_name=organisation[1]) }}">
-                <td>{{ organisation[0] }}</td>
-                <td>{{ organisation[1] }}</td>
-                <td>
-                    {% for instrument in organisation[2] %}
-                        {{ instrument }}
-                    {% endfor %}
-                </td>
-            </tr>
-        {% endfor %}
-     </tbody>
-    </table>
-
-    <ul>
-        <br>
-        <br>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">name</th>
+                    <th scope="col">instrument</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for organisation in all_organisations %}
+                    <tr class='clickable-row' data-href="{{ url_for("admin.organ_page",o_name=organisation[1]) }}">
+                        <td>{{ organisation[0] }}</td>
+                        <td>{{ organisation[1] }}</td>
+                        <td>
+                            {% for instrument in organisation[2] %}
+                                {{ instrument }}
+                            {% endfor %}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
 
 
-    </ul>
-        <a class="button btn btn-success" href="{{ url_for('admin.register') }}">Register</a>
-    </div>
+            <br>
+            <br>
+
+
+            <a class="button btn btn-success" href="{{ url_for('admin.register') }}">Register</a>
+        </div>
 
 
     </div>

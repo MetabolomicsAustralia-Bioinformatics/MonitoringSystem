@@ -1,4 +1,4 @@
-from flask import render_template, request, Blueprint, session, url_for, redirect
+from flask import render_template, request, Blueprint, session
 from monitor_system.models import Instrument, Sample, Organisation
 import time
 from collections import defaultdict
@@ -8,23 +8,24 @@ import simplejson
 
 core = Blueprint('core', __name__)
 
-
+# homepage
 @core.route('/')
 def index():
     all_organisations = [(organisation.name, organisation.profile_image) for organisation in Organisation.query.all()]
 
     return render_template("home.html", all_organisations=all_organisations)
 
-
+# organisation details page
 @core.route('/<o_name>')
 def details(o_name):
+    print(o_name)
     o_id = Organisation.query.filter(Organisation.name == o_name).first().id
     all_instruments = [instrument.name for instrument in Instrument.query.filter(Instrument.o_id == o_id).all()]
     session['all_instruments'] = all_instruments
 
-    return render_template("new_detail.html", all_instruments=all_instruments)
+    return render_template("details.html", all_instruments=all_instruments)
 
-
+# deal with single instrument
 @core.route('/singleGraph')
 def singleGraph():
     if request.method == 'GET' and request.args.get('name', ''):
@@ -44,11 +45,11 @@ def singleGraph():
             span = request.args.get("span")
 
             end = datetime.datetime.now()
+            # data of selected instrument in previous one day
             if span == "1day":
                 start = end - datetime.timedelta(days=1)
             elif span == "1week":
                 start = end - datetime.timedelta(days=7)
-                # data of selected instrument in previous one week
             elif span == "1month":
                 start = end - datetime.timedelta(days=30)
             elif span == "6months":
@@ -57,11 +58,12 @@ def singleGraph():
                 start = end - datetime.timedelta(days=365)
 
         # if only pick an instrument
+        # return default -- previous 1 week
         else:
             end = datetime.datetime.now()
             start = end - datetime.timedelta(days=7)
-            # data of selected instrument in previous one week
 
+        # filter data by time and instrument
         ins_samples = Sample.query.filter(Sample.instrument == selected_instrument, Sample.actual_start <= end,
                                           Sample.actual_end >= start).all()
         end = int(time.mktime(end.timetuple()) * 1000)
@@ -71,7 +73,7 @@ def singleGraph():
 
         selected_span = end - start
         running_time = 0
-        # collet the start and finish time of each running
+        # collect the start and finish time of each running
         for sample in ins_samples:
 
             st = sample.actual_start
@@ -101,6 +103,7 @@ def singleGraph():
                                selected_instrument=selected_instrument)
 
 
+# deal with multiple instruments with default span
 @core.route('/defaultMultiGraph')
 def defaultMultiGraph():
     if request.method == 'GET' and request.args.get('selected_instruments', ''):
@@ -161,18 +164,10 @@ def defaultMultiGraph():
 def sidebar():
     if request.method == 'GET':
         all_instruments = session['all_instruments']
-        print(all_instruments)
-        # all_instruments = [instrument.name for instrument in Instrument.query.all()]
         mode = request.args.get('sidebar', '')
         return render_template(mode + "Sidebar" + ".html", all_instruments=all_instruments)
 
 
-@core.route('/timePicker')
-def timePicker():
-    if request.method == 'GET':
-        time = request.args.get('time', '')
-        print(time + "Timepicker" + ".html")
-        return render_template(time + "Timepicker" + ".html")
 
 
 @core.route('/multiGraph')
@@ -242,7 +237,7 @@ def multiGraph():
 
             info[instrument]["ins_data"] = ins_data
 
-            # transfer to string
+        # transfer to string
         info = simplejson.dumps(info)
 
         return render_template('multiGraph.html', info=info, start_time=start_int, end_time=end_int)

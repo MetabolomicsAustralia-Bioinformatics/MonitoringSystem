@@ -15,6 +15,7 @@
 
     </div>
 
+    {#    create sites for registered organsation#}
     {% for organisation in all_organisations %}
 
         <a title="{{ organisation[0] }}" href="{{ url_for("core.details",o_name=organisation[0]) }}">
@@ -22,7 +23,6 @@
         </a>
 
     {% endfor %}
-
 
     <script>
         $('img').each(function () {

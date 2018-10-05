@@ -1,34 +1,46 @@
+{#libraries and nav bar#}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Instrument Monitor</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Instrument Monitoring System</title>
+    {#    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"#}
+    {#          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">#}
+    {#    <script src="https://code.jquery.com/jquery-3.3.1.min.js"#}
+    {#            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>#}
+    {#    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"#}
+    {#            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"#}
+    {#            crossorigin="anonymous"></script>#}
+    {#    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"#}
+    {#            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"#}
+    {#            crossorigin="anonymous"></script>#}
 
-    <link rel="stylesheet"  href="{{ url_for('static', filename='style.css') }}">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-{#    font#}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+    {#    jquery and bootstrap libraries#}
+    <script src="../static/popper.min.js"></script>
+    <script src="../static/jquery-3.3.1.min.js"></script>
+    <script src="../static/bootstrap.min.js"></script>
+    <link type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+
+
+    {#    font #}
     <link href="https://fonts.googleapis.com/css?family=Lora:400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 
     <link type="text/css" href="{{ url_for('static', filename='theme.css') }}" rel="stylesheet">
 
-{#    timepicker#}
+    {#    timepicker #}
     <script src="../static/bootstrap-datetimepicker.js"></script>
-{#    <link rel="stylesheet" href="{{ url_for('static', filename='datetimepicker.css') }}" rel="stylesheet">#}
-    <link rel="stylesheet" href="../static/datetimepicker.css" />
+    <link rel="stylesheet" href="../static/datetimepicker.css"/>
 
-{#    facicon.ico#}
-{#    <link rel="shortcut icon" href="">#}
-{#    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">#}
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-
 </head>
 <body>
 
@@ -37,51 +49,53 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family: Raleway, sans-serif">
 
     <div class="container">
-{#    add icon#}
-  <a class="navbar-brand" href="#" > <i class="fas fa-flask" id="icon"></i> </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+        {#    add icon#}
+        <a class="navbar-brand" href="#"> <i class="fas fa-flask" id="icon"></i> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ url_for("core.index") }}">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" href="{{ url_for("admin.login") }}">Admin <span class="sr-only">(current)</span></a>
-      </li>
-        </ul>
-</div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for("core.index") }}">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for("admin.login") }}">Admin <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
 
 
-
-     <ul class="navbar-nav navbar-right">
-         <li><span class="navbar-text font-italic">
+        <ul class="navbar-nav navbar-right">
+            <li><span class="navbar-text font-italic">
              Welcome
             </span>
 
-          {% if current_user.is_authenticated %}
-     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle font-italic" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            {{ current_user.username }}
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Edit Profile</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="{{ url_for('admin.logout') }}">Sign out</a>
-        </div>
-      </li>
-          {% endif %}
+                {% if current_user.is_authenticated %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle font-italic" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{ current_user.username }}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Edit Profile</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="{{ url_for('admin.logout') }}">Sign out</a>
+                        </div>
+                    </li>
+                {% endif %}
 
-       </ul>
-</div>
+        </ul>
+    </div>
 
 </nav>
 

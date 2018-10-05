@@ -1,3 +1,9 @@
+
+
+// supports complex selection function and animation
+//AJAX
+
+
 $(".clickable-row").click(function () {
     window.location = $(this).data("href");
 });
@@ -27,7 +33,6 @@ var app = {
 
 app.init = function () {
     app.ins.on("click", function () {
-        //    从路径中取page这个data
         name = $(this).data('name');
         app.loadSingleGraph(name);
         console.log("clicked instrument");
@@ -40,7 +45,6 @@ app.init = function () {
     });
 
     app.multi_ins.on("click", function () {
-        //    从路径中取page这个data
         mul_name = $(this).data('dt');
         //store selected instrument names into an array
         if (selected_instruments.indexOf(mul_name) === -1) {
@@ -128,7 +132,6 @@ app.loadSingleGraph = function (name) {
     $.ajax({
         type: 'GET',
         url: '/singleGraph',
-        // dataType:'json',
         cache: false,
         data: {name: name},
         success: function (data) {
@@ -180,7 +183,6 @@ app.loadMultiDatePage = function (selected_instruments, start_time, end_time) {
         $.ajax({
             type: 'GET',
             url: '/multiGraph',
-            // dataType:'json',
             cache: false,
             data: {selected_instruments: instruments, start_time: start_time, end_time: end_time},
             success: function (data) {
@@ -234,11 +236,8 @@ app.loadMultiSpanGraph = function (selected_instruments, span) {
             type: 'GET',
             url: '/multiGraph',
             cache: false,
-            // traditional:true,
             data: {span: span, selected_instruments: instruments},
             success: function (data) {
-                // console.log("!!!!!!!!!!!!!span: " + span);
-                // console.log("hi!!!in the multi ins loadpage");
                 app.putContent(data);
             },
             error: function () {

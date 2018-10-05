@@ -1,6 +1,5 @@
 
-
-
+/* background image in homepage*/
 .homepage {
     position: relative;
     background-image: url(images/photo-1520607162513-77705c0f0d4a.jpg);
@@ -8,30 +7,31 @@
 }
 
 
+/* center all items within body, this property is inherited */
+body > * {
+    text-align: left;
+}
 
-/*body { text-align: center; }*/
-     /* center all items within body, this property is inherited */
-body > * { text-align: left; }
-     /* left-align the CONTENTS all items within body, additionally
-        you can add this text-align: left property to all elements
-        manually */
+/* left-align the CONTENTS all items within body, additionally
+   you can add this text-align: left property to all elements
+   manually */
 
-.flashes         { background: #cee5F5; padding: 0.5em;
-                  border: 1px solid #aacbe2;
-                font-family: "Lora";
-    font-size: 15px ;
+.flashes {
+    background: #cee5F5;
+    padding: 0.5em;
+    border: 1px solid #aacbe2;
+    font-family: "Lora";
+    font-size: 15px;
 }
 
 .logoImg {
-    width:50%;
-    margin:2% auto;
-     display: block;
-
-    border-radius:10%;
+    width: 50%;
+    margin: 2% auto;
+    display: block;
+    border-radius: 10%;
     height: 170px;
-    border:0.5px solid #4b6280
+    border: 0.5px solid #4b6280
 }
-
 
 .center {
     margin: auto;
@@ -39,21 +39,17 @@ body > * { text-align: left; }
     border: 3px solid green;
     padding: 10px;
 }
-.middle {
-    display: inline-block!important;
-   margin-left: auto;
-    margin-right: auto;
-    /*text-align: left;*/
-    width: 13em;
-    /*vertical-align: middle!important;*/
 
+.middle {
+    display: inline-block !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 13em;
 }
 
 .textCenter {
     text-align: center;
 }
-
-
 
 #icon {
     padding-left: 20px;
@@ -61,54 +57,53 @@ body > * { text-align: left; }
 
 ul {
     list-style: none;
-    padding:0;
+    padding: 0;
     margin: 0;
 }
 
-
 .nav li [class*=" icon-"] {
-  display: inline-block;
-  width: 1.25em;
-  text-align: center;
+    display: inline-block;
+    width: 1.25em;
+    text-align: center;
 }
 
 [class*=" icon-"].pull-right {
-  margin-left: .3em;
+    margin-left: .3em;
 
 }
-
 
 .nav li [class*=" icon-"] {
-  display: inline-block;
-  width: 1.25em;
-  text-align: center;
-}
-.pull-right {
-  float: right;
+    display: inline-block;
+    width: 1.25em;
+    text-align: center;
 }
 
+.pull-right {
+    float: right;
+}
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  text-decoration: inherit;
-  display: inline-block;
-  speak: none;
+    text-decoration: inherit;
+    display: inline-block;
+    speak: none;
 }
+
 /* makes sure icons active on rollover in links */
 a [class^="icon-"],
 a [class*=" icon-"] {
-  display: inline-block;
+    display: inline-block;
 }
+
 /* makes the font 33% larger relative to the icon container */
 .icon-large:before {
-  vertical-align: -10%;
-  font-size: 1.3333333333333333em;
+    vertical-align: -10%;
+    font-size: 1.3333333333333333em;
 }
-    /*height:0;overflow:hidden;-webkit-transition:height 0.35s ease;-moz-transition:height 0.35s ease;-o-transition:height 0.35s ease;transition:height 0.35s ease;}*/
 
 .icon-cog:before {
     content: "(images/1.png)"
-    }
+}
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
     text-decoration: inherit;
@@ -118,14 +113,14 @@ a [class*=" icon-"] {
 }
 
 #option {
-    /*padding-top: 15%;*/
-     width: 15%;
+    width: 15%;
 }
+
 #menu {
-    float:left;
+    float: left;
     height: 60%;
     width: 13em;
-    margin-left:2em;
+    margin-left: 2em;
     color: white;
 }
 
@@ -145,26 +140,22 @@ a [class*=" icon-"] {
     width: 100%;
     float: left;
     min-height: 1px;
-    /*margin-left: 20px;*/
 }
 
-
 body {
-    font-family: 'Lora',serif;
+    font-family: 'Lora', serif;
 }
 
 .homepageText {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 5px;
-  text-align: center;
-  line-height: 1;
-  backdrop-filter: blur(10px) grayscale(30%);
-  -webkit-backdrop-filter: blur(10px) grayscale(30%);
-  max-width: 50%;
-  max-height: 50%;
+    text-align: center;
+    line-height: 1;
+    backdrop-filter: blur(10px) grayscale(30%);
+    -webkit-backdrop-filter: blur(10px) grayscale(30%);
+    max-width: 50%;
+    max-height: 50%;
 }
-
-
 
 #intro {
     font-size: 30px;
@@ -175,31 +166,29 @@ body {
 
 #detailCenter {
     text-align: center;
-    height:100em;
-    /*width:100%;*/
-    padding-top:0.2em;
-    /*margin-left:0;*/
+    height: 100em;
+    padding-top: 0.2em;
 }
-
-
 
 .not_show {
     display: none;
 }
 
 .active_ins {
-    background-color: #28262c!important;
-	color: #fafafa!important;
+    background-color: #28262c !important;
+    color: #fafafa !important;
 }
 
 button {
-  outline: none!important;
+    outline: none !important;
 }
 
 #confirm {
-    color: #212529!important;
+    color: #212529 !important;
     background-color: #cbdefa !important;
-    border-color: #cbdefa!important;
+    border-color: #cbdefa !important;
 }
 
-.clickable-row { cursor: pointer; }
+.clickable-row {
+    cursor: pointer;
+}

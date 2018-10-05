@@ -1,8 +1,8 @@
+
+
 from monitor_system import db, login_manager
 from werkzeug.security import generate_password_hash, check_password_hash
-import pymysql
 from sqlalchemy.schema import ForeignKeyConstraint
-# pymysql.install_as_MySQLdb()
 from flask_login import UserMixin
 
 

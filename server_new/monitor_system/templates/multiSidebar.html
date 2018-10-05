@@ -1,28 +1,31 @@
 
-<div >
- <div id="menu" class="sidebar textCenter" style="position:relative">
-    <div style="overflow:hidden;clear:both;">
 
-        <ul class="widget widget-menu short"  style="height:22em;overflow-y:scroll;">
+{#sidebar menu for multiple instruments #}
 
-                <li id="ins_menu"><a href="#togglePage" class="collapsed" data-toggle="collapse"  style="color:white">
-                    Select Instrument <i class="fas fa-angle-down pull-right" ></i>
-{#                                            <i class="fas fa-angle-up pull-right"></i>#}
+<div>
+    <div id="menu" class="sidebar textCenter" style="position:relative">
+        <div style="overflow:hidden;clear:both;">
+
+            <ul class="widget widget-menu short" style="height:22em;overflow-y:scroll;">
+
+                <li id="ins_menu"><a href="#togglePage" class="collapsed" data-toggle="collapse" style="color:white">
+                    Select Instrument <i class="fas fa-angle-down pull-right"></i>
                 </a>
                 </li>
-                    {% for instrument in all_instruments %}
-                        <li class="ins"><a data-dt='{{ instrument }}' class="multi_ins_select"
-                               href="#">{{ instrument }}</a></li>
-{#                                                         <option value={{ instrument }}> {{ instrument }}</option>#}
-                    {% endfor %}
-        </ul>
+                {% for instrument in all_instruments %}
+                    <li class="ins"><a data-dt='{{ instrument }}' class="multi_ins_select"
+                                       href="#">{{ instrument }}</a></li>
+                {% endfor %}
+            </ul>
+
+        </div>
 
     </div>
 
+    <div style="position:absolute; bottom:2.5em; left:5em">
+        <button type="button" class="btn btn-dark btn-light" id="confirm">Confirm</button>
     </div>
-<div style="position:absolute; bottom:2.5em; left:5em" >
-<button type="button" class="btn btn-dark btn-light" id="confirm">Confirm</button>
-{#</div>#}
+
 </div>
-</div>
- <script src="{{ url_for('static',filename='select.js') }}"></script>
+
+<script src="{{ url_for('static',filename='select.js') }}"></script>
