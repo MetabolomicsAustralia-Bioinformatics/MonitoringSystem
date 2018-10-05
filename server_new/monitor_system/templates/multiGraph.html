@@ -69,25 +69,9 @@
 
 
 option = {
-    {#legend: {#}
-    {#    data: ['running status']},#}
-
-
-    {#backgroundColor: '#08254F',#}
-    {#zlevel:6,#}
-    // tooltip（提示框组件）
-    {#tooltip: {#}
-    {#    //trigger(触发类型)，可选'item','axis','none'#}
-    {#    trigger: 'axis',#}
-    {#    axisPointer: {#}
-    {#        //指示器类型,可选'line','shadow','cross'#}
-    {#        type: 'shadow'},},#}
-    //echarts图表的相对于容器的布局,
     grid: {
-        {#zlevel:5,#}
         top: 30,
         containLabel:false,
-        {#left:0,#}
         right:'3%'
 
     }, grid3D: {
@@ -103,20 +87,18 @@ option = {
         }
     },
      dataZoom: [
-                    {   // 这个dataZoom组件，默认控制x轴。
-                        type: 'slider', // 这个 dataZoom 组件是 slider 型 dataZoom 组件
-                        start: 0,      // 左边在 10% 的位置。
-                        end: 100  , // 右边在 60% 的位置。
+                    {
+                        type: 'slider',
+                        start: 0,
+                        end: 100  ,
                         filterMode:'none',
                         realtime:true,
-                        {#xAxisIndex: [0],#}
                     },
-          {   // 这个dataZoom组件，也控制x轴。
-            type: 'inside', // 这个 dataZoom 组件是 inside 型 dataZoom 组件
-            start: 0,      // 左边在 10% 的位置。
+          {
+            type: 'inside',
+            start: 0,
             end: 100,
               filterMode:'none',
-               // 右边在 60% 的位置。
         }
                 ],
     xAxis: [{
@@ -128,7 +110,7 @@ option = {
         splitLine: {
             show: true,
         },
-         {#move 1 second to avoid bugs of ECharts#}
+
          min: {{ start_time }} - 1000,
                     max: {{ end_time }} + 1000,
                     dateTimeLabelFormats: {
@@ -139,19 +121,15 @@ option = {
                     splitNumber: 10,
 
 
-        //axisTick 坐标轴刻度相关设置
         axisTick: {
             show: true
         },
 
-        //axixLine 坐标轴轴线相关设置
         axisLine: {
             show: true,
-            lineStyle: {
-                {#color: '#FFFFFF',#}
-            }
+            lineStyle: {}
         },
-        //axisLabel 坐标轴刻度标签的相关设置
+
         axisLabel: {
             show: true,
         }
@@ -161,15 +139,10 @@ option = {
         type: 'category',
         data: ins,
         boundaryGap: true,
-         axisPointer: {
-                        // show: true
-                    },
+         axisPointer: {},
 
         axisLabel: {
-
             show: true,
-            {#color: '#fff',#}
-
         },
         splitLine: {
             show: false
@@ -177,7 +150,6 @@ option = {
         axisLine: {
             show: true,
             lineStyle: {
-                {#color: '#fff',#}
             },
         },
         axisTick: {
@@ -187,21 +159,15 @@ option = {
      ],
     series: function(){
         var serie=[];
-        {#console.log("max: " + maxLen);#}
         for( var i=0;i <= maxLen/2 ;i++) {
             d = [];
             for (index in ins) {
                 name = ins[index];
-                {#console.log(name);#}
-                {#console.log("bbbbb");#}
-                {#console.log("i: " + i);#}
+
                 var start = info[name]["start"][i];
-                {#console.log(start);#}
-                {#console.log(maxLen - i * 2);#}
 
 
                 d.push(start);
-                {#console.log("starttime: " + d);#}
             }
             var item1 = {
                 zlevel:-12,
@@ -209,15 +175,10 @@ option = {
                 stack: '总量',
                 data: d,
                 barWidth: '30%',
-                // barGap 不同系列的柱间距离
                 barGap: '-100%',
-                {#z:0,#}
                 z: maxLen - i * 2,
 
                 itemStyle: {
-                    //barBorderRadius bar圆角半径
-                    {#barBorderRadius: 10,#}
-
                     color: '#afd6fa' ,
                 }
             };
@@ -226,20 +187,10 @@ option = {
             d = [];
             for (index in ins) {
                 name = ins[index];
-                {#console.log(name);#}
-                {#if(info[name]["start"].length < i){#}
-                {#     console.log("aaaaa");#}
-                {#   var end = '';}#}
-                {#else{#}
-                {#console.log(name);#}
-                {#console.log("bbbbb");#}
-                {#console.log("i: " + i);#}
                 var end = info[name]["end"][i];
-                {#console.log(end);#}
-                {#console.log(maxLen - i * 2 - 1);#}
+
 
                 d.push(end);
-                {#console.log("endtime: " + d);#}
             }
 
             var item2 = {
@@ -248,14 +199,11 @@ option = {
                 data: d,
                 zlevel:-12,
                 barWidth: '30%',
-                // barGap 不同系列的柱间距离
+
                 barGap: '-100%',
-                {#z: 1,#}
+
                 z: maxLen - i * 2 - 1,
                 itemStyle: {
-                    //barBorderRadius bar圆角半径
-                    {#barBorderRadius: 10,#}
-
                     color: '#F97A7A',
                 }
             };
@@ -272,62 +220,16 @@ option = {
                 data: d,
                 barWidth: '30%',
                 zlevel:-12,
-                // barGap 不同系列的柱间距离
                 barGap: '-100%',
-                {#z: 1,#}
                 z: 0,
                 itemStyle: {
-                    //barBorderRadius bar圆角半径
-                    {#barBorderRadius: 10,#}
-
                     color: '#afd6fa',
                 }
             };
             serie.push(item3);
-
-
-        {#console.log(serie.length);#}
     return serie;
         }()
 };
 
         myChart.setOption(option);
-
-    {#    myChart.on('dataZoom', function(e) {#}
-    {#console.log(e);         // All params#}
-    {#console.log(e.start);   // Start value#}
-    {#console.log(e.end); #}
-    {#myChart.setOption(option);#}
-    // End value
-            {#for (serie in myChart.series){#}
-            {#    for(t in serie.data){#}
-            {#        if(t<e.start){#}
-            {#            t = e.start;#}
-            {#        }#}
-            {#        else if(t>e.end){#}
-            {#            t = e.end;#}
-            {#        }#}
-            {#    }}});#}
-
-
-        {# ins = [];#}
-        {#maxLen = 1;#}
-        {#for(var name in info) {#}
-        {#    ins.push(name);}#}
-        {#var tbody =  $("#body");#}
-        {#var rows = '';#}
-        {#for (index in ins) {#}
-        {#    rows += '<th scope="row">' + index + '</th>';#}
-        {#    rows += '</tr>';#}
-        {#    var name = ins[index];#}
-        {#    var up = info[name]["ratio"];#}
-        {#    var down = info[name]["rest_ratio"];#}
-        {#    rows += '<th scope="row">' + name + '</th>';#}
-        {#    rows += '<th scope="row">' + up + '</th>';#}
-        {#    rows += '<th scope="row">' + down + '</th>';#}
-        {#    rows += '</tr>';#}
-        {#    console.log("1111111111");#}
-        {#    console.log(rows)}#}
-        {# tbody.html(rows);#}
     </script>
-{#</div>#}

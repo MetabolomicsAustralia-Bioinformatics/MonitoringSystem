@@ -3,71 +3,69 @@
 {% block content %}
     <div class="container" style="width: 30em">
         <br>
-         <br>
-
-
-    <form id="organ_form" method="POST" enctype="multipart/form-data">
-        {# This hidden_tag is a CSRF security feature. #}
-        {{ organ_form.hidden_tag() }}
-        <div class="form-group">
-        {{ organ_form.organ_name.label(class="form-group") }}
-        {{ organ_form.organ_name(class="form-control",placeholder="New Organisation Name", autocomplete="off") }}<br>
-        </div>
-
-        <div class="form-group">
-        {{ organ_form.picture.label(class="form-group") }}
-        {{ organ_form.picture(class="form-control-file") }}
-        </div>
-
         <br>
 
 
-        <div class="form-group">
-        {{ organ_form.organ_submit(class="btn btn-primary") }}
-        </div>
-
-    </form>
-
-
-    <form id="ins_form" method="POST">
-        {{ organ_form.hidden_tag() }}
-        <div class="form-group">
-        {{ ins_form.o_id.label(class="form-group") }}
-        {{ ins_form.o_id(class="form-control",placeholder="Organisation ID", autocomplete="off") }}<br>
-        </div>
-
-        <div class="form-group">
-        {{ ins_form.ins_name.label(class="form-group") }}
-         {{ ins_form.ins_name(class="form-control",placeholder="New Instrument Name", autocomplete="off") }}<br>
-         </div>
-        <div class="form-group">
-        {{ ins_form.password.label(class="form-group") }}
-         {{ ins_form.password(class="form-control") }}<br>
+        <form id="organ_form" method="POST" enctype="multipart/form-data">
+            {# This hidden_tag is a CSRF security feature. #}
+            {{ organ_form.hidden_tag() }}
+            <div class="form-group">
+                {{ organ_form.organ_name.label(class="form-group") }}
+                {{ organ_form.organ_name(class="form-control",placeholder="New Organisation Name", autocomplete="off") }}<br>
             </div>
 
-        <div class="form-group">
-        {{ ins_form.pass_confirm.label(class="form-group") }} {{ ins_form.pass_confirm(class="form-control") }}<br>
-        </div>
+            <div class="form-group">
+                {{ organ_form.picture.label(class="form-group") }}
+                {{ organ_form.picture(class="form-control-file") }}
+            </div>
 
-        <div class="form-group">
-        {{ ins_form.ins_submit(class="btn btn-primary") }}
-        </div>
-    </form>
+            <br>
 
 
+            <div class="form-group">
+                {{ organ_form.organ_submit(class="btn btn-primary") }}
+            </div>
+
+        </form>
+
+
+        <form id="ins_form" method="POST">
+            {{ organ_form.hidden_tag() }}
+            <div class="form-group">
+                {{ ins_form.o_id.label(class="form-group") }}
+                {{ ins_form.o_id(class="form-control",placeholder="Organisation ID", autocomplete="off") }}<br>
+            </div>
+
+            <div class="form-group">
+                {{ ins_form.ins_name.label(class="form-group") }}
+                {{ ins_form.ins_name(class="form-control",placeholder="New Instrument Name", autocomplete="off") }}<br>
+            </div>
+            <div class="form-group">
+                {{ ins_form.password.label(class="form-group") }}
+                {{ ins_form.password(class="form-control") }}<br>
+            </div>
+
+            <div class="form-group">
+                {{ ins_form.pass_confirm.label(class="form-group") }} {{ ins_form.pass_confirm(class="form-control") }}<br>
+            </div>
+
+            <div class="form-group">
+                {{ ins_form.ins_submit(class="btn btn-primary") }}
+            </div>
+        </form>
 
 
     </div>
 
-{#<form method="POST">#}
+    {#<form method="POST">#}
     {# This hidden_tag is a CSRF security feature. #}
-{#    {{ form.hidden_tag() }}#}
-{#    {{ form.email.label }} {{ form.email() }}<br>#}
-{#    {{ form.username.label }} {{ form.username() }}<br>#}
-{#    {{ form.password.label }} {{ form.password() }}<br>#}
-{#    {{ form.pass_confirm.label }} {{ form.pass_confirm() }}<br>#}
-{#    {{ form.submit() }}#}
-{#</form>#}
+    {#    {{ form.hidden_tag() }}#}
+    {#    {{ form.email.label }} {{ form.email() }}<br>#}
+    {#    {{ form.username.label }} {{ form.username() }}<br>#}
+    {#    {{ form.password.label }} {{ form.password() }}<br>#}
+    {#    {{ form.pass_confirm.label }} {{ form.pass_confirm() }}<br>#}
+    {#    {{ form.submit() }}#}
+    {#</form>#}
 
 
 {% endblock %}

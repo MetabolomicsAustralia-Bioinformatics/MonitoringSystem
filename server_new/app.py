@@ -1,4 +1,5 @@
 from monitor_system import app
+
 # from monitor_system import db
 
 if __name__ == '__main__':

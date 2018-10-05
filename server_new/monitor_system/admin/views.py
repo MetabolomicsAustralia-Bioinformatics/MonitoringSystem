@@ -1,15 +1,12 @@
-from flask import render_template,request,Blueprint,flash, redirect, url_for
+from flask import render_template, request, Blueprint, flash, redirect, url_for
 from monitor_system import db
-from monitor_system.models import Organisation,Instrument, Admin
+from monitor_system.models import Organisation, Instrument, Admin
 from monitor_system.admin.forms import LoginForm, UpdateOrganisationForm
-from monitor_system.admin.forms import Ogran_RegistrationForm,Ins_RegistrationForm
+from monitor_system.admin.forms import Ogran_RegistrationForm, Ins_RegistrationForm
 from flask_login import login_user, login_required, logout_user, current_user
 from monitor_system.admin.picture_handler import add_pic
 
-
-
-admin = Blueprint('admin',__name__)
-
+admin = Blueprint('admin', __name__)
 
 
 @admin.route('/login', methods=['GET', 'POST'])
@@ -26,7 +23,7 @@ def login():
             # The verify_password method comes from the User object
             # try:
             if email.check_password(form.password.data) and admin is not None:
-                #Log in the user
+                # Log in the user
                 login_user(email)
 
                 next = request.args.get('next')
@@ -36,15 +33,11 @@ def login():
                 if next == None or not next[0] == '/':
                     next = url_for('admin.view')
 
-
                 # return redirect(next)
                 return redirect(next)
             else:
                 flash("Incorrect Email or password.")
                 flash("Please try again")
-            # except:
-            #     flash("Incorrect Email or password.")
-            #     flash("Please try again")
 
         return render_template('login.html', form=form)
 
@@ -56,48 +49,53 @@ def view():
     for organisation in Organisation.query.all():
         o_id = organisation.id
         o_name = organisation.name
-        instruments = [instrument.name for instrument in Instrument.query.filter(Instrument.o_id==o_id).all()]
+        instruments = [instrument.name for instrument in Instrument.query.filter(Instrument.o_id == o_id).all()]
         all_organisations.append((o_id, o_name, instruments))
 
     return render_template('admin.html', all_organisations=all_organisations)
 
 
-
 @admin.route('/register', methods=['GET', 'POST'])
 @login_required
 def register():
-
     organ_form = Ogran_RegistrationForm()
     ins_form = Ins_RegistrationForm()
 
     if request.method == "POST":
         if ins_form.validate_on_submit():
-            instrument = Instrument(o_id=ins_form.o_id.data, name=ins_form.ins_name.data, password=ins_form.password.data)
+            instrument = Instrument(o_id=ins_form.o_id.data, name=ins_form.ins_name.data,
+                                    password=ins_form.password.data)
 
             db.session.add(instrument)
             db.session.commit()
-            flash("success!   registered new instruments! ")
+
             return redirect(url_for('admin.view'))
 
         elif organ_form.validate_on_submit():
-            # if organ_form.picture.data:
             organ_name = organ_form.organ_name.data
             pic = add_pic(organ_form.picture.data, organ_name)
-            organisation = Organisation(organ_name,pic)
+            organisation = Organisation(organ_name, pic)
 
             db.session.add(organisation)
             db.session.commit()
-            flash("success!   registered new organisation! ")
             return redirect(url_for('admin.view'))
 
-
     return render_template('register.html', organ_form=organ_form, ins_form=ins_form)
+
 
 @login_required
 @admin.route('/<o_name>', methods=['GET', 'POST'])
 def organ_page(o_name):
     update_o_form = UpdateOrganisationForm()
     organisation = Organisation.query.filter(Organisation.name == o_name).first()
+    count = 0
+    instruments = []
+    for instrument in Instrument.query.filter(Instrument.o_id == organisation.id).all():
+        count += 1
+        instrument = (instrument.name, count)
+        instruments.append(instrument)
+
+    # instruments = [instrument.name for instrument in Instrument.query.filter(Instrument.o_id == organisation.id).all()]
 
     if request.method == "POST":
         if update_o_form.validate_on_submit():
@@ -130,23 +128,22 @@ def organ_page(o_name):
     elif request.method == "GET":
         o_pic = organisation.profile_image
         o_id = organisation.id
-        organisation = (o_name,o_pic,o_id)
+        organisation = (o_name, o_pic, o_id)
         update_o_form.organ_name.data = o_name
-    return render_template('organisation_page.html',organisation=organisation,update_o_form=update_o_form,)
+
+    return render_template('organisation_page.html', organisation=organisation, update_o_form=update_o_form,
+                           instruments=instruments)
 
 
 # delete_organisation
-@admin.route('/<o_name>/delete', methods=['GET','POST'])
+@admin.route('/<o_name>/delete', methods=['GET', 'POST'])
 @login_required
 def delete_organisation(o_name):
-
-    organisation = Organisation.query.filter(o_name==Organisation.name).first()
+    organisation = Organisation.query.filter(o_name == Organisation.name).first()
     db.session.delete(organisation)
     db.session.commit()
     flash('Organisation has been deleted')
     return redirect(url_for('admin.view'))
-
-
 
 
 @admin.route("/logout")
@@ -154,4 +151,3 @@ def delete_organisation(o_name):
 def logout():
     logout_user()
     return redirect(url_for('core.view'))
-

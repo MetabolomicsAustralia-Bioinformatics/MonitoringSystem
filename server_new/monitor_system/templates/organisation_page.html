@@ -1,82 +1,121 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="jumbotron">
-  <div align='center'>
-    <h3>This is the page for <span style="font-style: italic;font-weight: bold ">{{organisation[0]}}</span></h3>
-    <img class="logoImg" align='center' src="{{ url_for('static', filename='organisation_pics/' + organisation[1]) }}">
-  </div>
-</div>
+    <div class="jumbotron">
+        <div align='center'>
+            <h3>This is the page for <span style="font-style: italic;font-weight: bold ">{{ organisation[0] }}</span>
+            </h3>
+            <img class="logoImg" align='center'
+                 src="{{ url_for('static', filename='organisation_pics/' + organisation[1]) }}">
+        </div>
+    </div>
 
 
-<div class="container" style="width: 30em">
-  <form  method="POST" action = "" enctype="multipart/form-data">
-{#  This hidden_tag is a CSRF security feature.#}
-        {{ update_o_form.hidden_tag() }}
+    <div class="container" style="width: 30em">
+        <form method="POST" action="" enctype="multipart/form-data">
+            {#  This hidden_tag is a CSRF security feature.#}
+            {{ update_o_form.hidden_tag() }}
+            <div class="form-group">
+                {{ update_o_form.organ_name.label(class="form-group") }}
+                {{ update_o_form.organ_name(class="form-control") }}<br>
+            </div>
+
+            <div class="form-group">
+                {{ update_o_form.picture.label(class="form-group") }}
+                {{ update_o_form.picture(class="form-control-file") }}
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                {{ update_o_form.submit(class="btn btn-primary") }}
+            </div>
+        </form>
+
         <div class="form-group">
-        {{ update_o_form.organ_name.label(class="form-group") }}
-        {{ update_o_form.organ_name(class="form-control") }}<br>
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#del_modal">Delete</button>
         </div>
 
-        <div class="form-group">
-        {{ update_o_form.picture.label(class="form-group") }}
-        {{ update_o_form.picture(class="form-control-file") }}
+
+        <!-- Modal for Pop Up-->
+        {# https://getbootstrap.com/docs/4.1/components/modal/ #}
+        <div class="modal" tabindex="-1" role="dialog" id="del_modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Warning: Delete Organisation</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure you want to delete <span style="font-style: italic">{{ organisation[0] }}</span>?
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+
+                        <form action="{{ url_for('admin.delete_organisation', o_name=organisation[0]) }}" method="POST">
+                            <input class="btn btn-danger" type="submit" value="Delete">
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+
+                <ul class=flashes>
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+    </div>
+
+
+    <br>
+    <hr>
+    <div class="container" style="width: 30em">
+        <table class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+            </tr>
+            </thead>
+            {#     <tbody>
+{#        {% for organisation in all_organisations %}
+{#            <tr class='clickable-row' data-href="{{ url_for("admin.organ_page",o_name=organisation[1]) }}">
+{#                <td>{{ organisation[0] }}</td>
+{#                <td>{{ organisation[1] }}</td>
+{#                <td>
+{#                    {% for instrument in organisation[2] %}
+{#                        {{ instrument }}
+{#                    {% endfor %}
+{#                </td>
+{#            </tr>
+{#        {% endfor %}
+{#     </tbody>#}
+            <tbody>
+            {% for instrument in instruments %}
+                <tr>
+                    <th scope="row" id="id">{{ instrument[1] }}</th>
+                    <td>{{ instrument[0] }}</td>
+
+                </tr>
+
+            {% endfor %}
+            </tbody>
+        </table>
 
         <br>
 
-        <div class="form-group">
-        {{ update_o_form.submit(class="btn btn-primary") }}
-            </div>
-  </form>
-
-         <div class="form-group">
-        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#del_modal">Delete</button>
-         </div>
-
-
-
-
-  <!-- Modal for Pop Up-->
-  {# https://getbootstrap.com/docs/4.1/components/modal/ #}
-  {# Notice how the link with the id to the button above! #}
-  <div class="modal" tabindex="-1" role="dialog" id="del_modal">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Warning: Delete Organisation</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Are you sure you want to delete <span style="font-style: italic">{{ organisation[0] }}</span>?</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-
-          <form action="{{ url_for('admin.delete_organisation', o_name=organisation[0]) }}" method="POST">
-            <input class="btn btn-danger" type="submit" value="Delete">
-          </form>
-        </div>
-      </div>
     </div>
-  </div>
-
-
-
-
- {% with messages = get_flashed_messages() %}
-  {% if messages %}
-
-      <ul class=flashes>
-    {% for message in messages %}
-      <li>{{ message }}</li>
-    {% endfor %}
-    </ul>
-  {% endif %}
-{% endwith %}
-
-</div>
 
 {% endblock content %}
