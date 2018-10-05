@@ -2,36 +2,494 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab3198d5-3ed0-4727-abad-d3ced63a93b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bar_chart_stack.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/admin/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/admin/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/admin/picture_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/admin/picture_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/admin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/admin/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/core/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/error_pages/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/error_pages/handlers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/static/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/static/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/static/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/static/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/static/bootstrap2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/static/select.js" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/static/select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/error_pages/403.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/graph.html" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/templates/graph.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/graph0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/multiGraph.html" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/templates/multiGraph.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/multiSidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/templates/multiSidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/multiTimepicker.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/new_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/templates/details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/organisation_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/templates/organisation_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/singleSidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/templates/singleSidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/singleTimepicker.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/AcqMethod.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/BinPump1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/BinPump1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/CK Choline 20171204 pos.m/191_1.stg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/CK Choline 20171204 pos.m/BinPump_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Qual/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Quant/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Quant/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/CK Choline 20171204 pos.m/HiP-ALS_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/CK Choline 20171204 pos.m/HiP-ALS_1_MethodMetaData.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/CK Choline 20171204 pos.m/HiP-ALS_1_Pretreatment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/CK Choline 20171204 pos.m/TCC_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/CK Choline 20171204 pos.m/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/Contents.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/DefaultMassCal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/DeviceConfigInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/Devices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/HiP-ALS1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/HiP-ALS1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/MSActualDefs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/MSMassCal.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/MSPeak.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/MSPeriodicActuals.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/MSProfile.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/MSScan.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/MSScan.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/MSTS.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/TCC1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/TCC1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/Worklist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/AcqData/sample_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/05uM.d/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/AcqMethod.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/BinPump1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/BinPump1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/Contents.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/DAD1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/DAD1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/DefaultMassCal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/DeviceConfigInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/Devices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/HiP-ALS1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/HiP-ALS1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/MSActualDefs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/MSMassCal.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/MSPeak.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/MSPeriodicActuals.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/MSProfile.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/MSScan.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/MSScan.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/MSTS.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/TCC1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/TCC1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/TDA.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/TDASpec.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/TOFDataIndex.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/Worklist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/191_1.stg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/BinPump_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DAD_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/qualitative.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Quant/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Quant/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1_MethodMetaData.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1_Pretreatment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/TCC_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/AcqData/sample_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/IndexedDataConverter.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/Results/Qual/Version3/Default.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/Results/Qual/Version3/Default.m/DaMethod/Qual/qualitative.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/Results/Qual/Version3/QualResult.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/checksum.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1.d/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/AcqMethod.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/BinPump1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/BinPump1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/CK Choline 20171204 pos.m/191_1.stg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/CK Choline 20171204 pos.m/BinPump_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Qual/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Quant/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Quant/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/CK Choline 20171204 pos.m/HiP-ALS_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/CK Choline 20171204 pos.m/HiP-ALS_1_MethodMetaData.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/CK Choline 20171204 pos.m/HiP-ALS_1_Pretreatment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/CK Choline 20171204 pos.m/TCC_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/CK Choline 20171204 pos.m/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/Contents.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/DefaultMassCal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/DeviceConfigInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/Devices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/HiP-ALS1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/HiP-ALS1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/MSActualDefs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/MSMassCal.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/MSPeak.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/MSPeriodicActuals.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/MSProfile.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/MSScan.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/MSScan.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/MSTS.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/TCC1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/TCC1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/Worklist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/AcqData/sample_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.d/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/10uM.mzML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/AcqMethod.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/BinPump1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/BinPump1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/CK Choline 20171204 pos.m/191_1.stg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/CK Choline 20171204 pos.m/BinPump_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Qual/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Quant/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Quant/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/CK Choline 20171204 pos.m/HiP-ALS_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/CK Choline 20171204 pos.m/HiP-ALS_1_MethodMetaData.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/CK Choline 20171204 pos.m/HiP-ALS_1_Pretreatment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/CK Choline 20171204 pos.m/TCC_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/CK Choline 20171204 pos.m/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/Contents.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/DefaultMassCal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/DeviceConfigInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/Devices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/HiP-ALS1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/HiP-ALS1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/MSActualDefs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/MSMassCal.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/MSPeak.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/MSPeriodicActuals.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/MSProfile.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/MSScan.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/MSScan.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/MSTS.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/TCC1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/TCC1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/Worklist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/AcqData/sample_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/1uM.d/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/AcqMethod.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/BinPump1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/BinPump1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/Contents.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/DAD1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/DAD1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/DefaultMassCal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/DeviceConfigInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/Devices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/HiP-ALS1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/HiP-ALS1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/MSActualDefs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/MSMassCal.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/MSPeak.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/MSPeriodicActuals.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/MSProfile.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/MSScan.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/MSScan.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/MSTS.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/TCC1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/TCC1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/TDA.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/TDASpec.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/TOFDataIndex.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/Worklist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/191_1.stg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/BinPump_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DAD_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/qualitative.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Quant/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Quant/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1_MethodMetaData.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1_Pretreatment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/TCC_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/sample_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/IndexedDataConverter.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/Results/Qual/Version3/Default.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/Results/Qual/Version3/Default.m/DaMethod/Qual/qualitative.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/Results/Qual/Version3/QualResult.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/checksum.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.mzML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/AcqMethod.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/BinPump1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/BinPump1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/Contents.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/DAD1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/DAD1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/DefaultMassCal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/DeviceConfigInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/Devices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/HiP-ALS1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/HiP-ALS1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/MSActualDefs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/MSMassCal.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/MSPeak.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/MSPeriodicActuals.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/MSProfile.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/MSScan.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/MSScan.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/MSTS.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/TCC1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/TCC1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/TDA.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/TDASpec.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/TOFDataIndex.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/Worklist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/191_1.stg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/BinPump_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DAD_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/qualitative.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Quant/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Quant/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1_MethodMetaData.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1_Pretreatment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/TCC_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/sample_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/IndexedDataConverter.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/Results/Qual/Version3/Default.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/Results/Qual/Version3/Default.m/DaMethod/Qual/qualitative.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/Results/Qual/Version3/QualResult.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/checksum.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/AcqMethod.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/BinPump1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/BinPump1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/CK Choline 20171204 pos.m/191_1.stg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/CK Choline 20171204 pos.m/BinPump_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Qual/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Quant/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Quant/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/CK Choline 20171204 pos.m/HiP-ALS_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/CK Choline 20171204 pos.m/HiP-ALS_1_MethodMetaData.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/CK Choline 20171204 pos.m/HiP-ALS_1_Pretreatment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/CK Choline 20171204 pos.m/TCC_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/CK Choline 20171204 pos.m/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/Contents.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/DefaultMassCal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/DeviceConfigInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/Devices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/HiP-ALS1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/HiP-ALS1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/MSActualDefs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/MSMassCal.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/MSPeak.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/MSPeriodicActuals.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/MSProfile.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/MSScan.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/MSScan.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/MSTS.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/TCC1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/TCC1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/Worklist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/AcqData/sample_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/2uM.d/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/AcqMethod.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/BinPump1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/BinPump1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/Contents.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/DAD1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/DAD1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/DefaultMassCal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/DeviceConfigInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/Devices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/HiP-ALS1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/HiP-ALS1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/MSActualDefs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/MSMassCal.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/MSPeak.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/MSPeriodicActuals.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/MSProfile.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/MSScan.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/MSScan.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/MSTS.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/TCC1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/TCC1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/TDA.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/TDASpec.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/TOFDataIndex.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/Worklist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/191_1.stg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/BinPump_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DAD_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/qualitative.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Quant/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Quant/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1_MethodMetaData.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1_Pretreatment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/TCC_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/AcqData/sample_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/IndexedDataConverter.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/Results/Qual/Version3/Default.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/Results/Qual/Version3/Default.m/DaMethod/Qual/qualitative.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/Results/Qual/Version3/QualResult.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/checksum.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/3.d/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/AcqMethod.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/BinPump1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/BinPump1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/CK Choline 20171204 pos.m/191_1.stg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/CK Choline 20171204 pos.m/BinPump_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Qual/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Quant/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/CK Choline 20171204 pos.m/DaMethod/Quant/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/CK Choline 20171204 pos.m/HiP-ALS_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/CK Choline 20171204 pos.m/HiP-ALS_1_MethodMetaData.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/CK Choline 20171204 pos.m/HiP-ALS_1_Pretreatment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/CK Choline 20171204 pos.m/TCC_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/CK Choline 20171204 pos.m/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/Contents.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/DefaultMassCal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/DeviceConfigInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/Devices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/HiP-ALS1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/HiP-ALS1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/MSActualDefs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/MSMassCal.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/MSPeak.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/MSPeriodicActuals.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/MSProfile.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/MSScan.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/MSScan.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/MSTS.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/TCC1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/TCC1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/Worklist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/AcqData/sample_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.d/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/5uM.mzML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/AcqMethod.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/BinPump1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/BinPump1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/Contents.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/DAD1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/DAD1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/DefaultMassCal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/DeviceConfigInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/Devices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/HiP-ALS1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/HiP-ALS1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/MSActualDefs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/MSMassCal.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/MSPeak.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/MSPeriodicActuals.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/MSProfile.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/MSScan.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/MSScan.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/MSTS.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/TCC1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/TCC1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/TDA.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/TDASpec.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/TOFDataIndex.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/Worklist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/191_1.stg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/BinPump_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DAD_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/qualitative.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Quant/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Quant/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1_MethodMetaData.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1_Pretreatment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/TCC_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/AcqData/sample_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/IndexedDataConverter.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/Results/Qual/Version3/Default.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/Results/Qual/Version3/Default.m/DaMethod/Qual/qualitative.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/Results/Qual/Version3/QualResult.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/checksum.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29617_SC_MA_GCMS_H-2-845-29011_Bio21-LC-QTOF-6545.d/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/AcqMethod.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/BinPump1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/BinPump1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/Contents.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/DAD1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/DAD1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/DefaultMassCal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/DeviceConfigInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/Devices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/HiP-ALS1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/HiP-ALS1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/MSActualDefs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/MSMassCal.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/MSPeak.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/MSPeriodicActuals.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/MSProfile.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/MSScan.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/MSScan.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/MSTS.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/TCC1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/TCC1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/TDA.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/TDASpec.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/TOFDataIndex.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/Worklist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/191_1.stg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/BinPump_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DAD_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/qualitative.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Quant/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Quant/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1_MethodMetaData.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1_Pretreatment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/TCC_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/AcqData/sample_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/IndexedDataConverter.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/Results/Qual/Version3/Default.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/Results/Qual/Version3/Default.m/DaMethod/Qual/qualitative.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/Results/Qual/Version3/QualResult.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/checksum.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29618_SC_MA_GCMS_H-3-845-29012_Bio21-LC-QTOF-6545.d/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/AcqMethod.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/BinPump1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/BinPump1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/Contents.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/DAD1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/DAD1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/DefaultMassCal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/DeviceConfigInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/Devices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/HiP-ALS1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/HiP-ALS1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/MSActualDefs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/MSMassCal.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/MSPeak.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/MSPeriodicActuals.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/MSProfile.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/MSScan.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/MSScan.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/MSTS.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/TCC1.cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/TCC1.cg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/TDA.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/TDASpec.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/TOFDataIndex.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/Worklist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/191_1.stg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/BinPump_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DAD_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Qual/qualitative.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Quant/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/DaMethod/Quant/method.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1_MethodMetaData.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/HiP-ALS_1_Pretreatment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/TCC_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/pHILIC 1200-6545 AllIons 750 stable_BN20160725.m/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/AcqData/sample_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/IndexedDataConverter.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/Results/Qual/Version3/Default.m/DaMethod/Qual/info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/Results/Qual/Version3/Default.m/DaMethod/Qual/qualitative.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/Results/Qual/Version3/QualResult.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/checksum.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/Raw_Data/29619_SC_MA_GCMS_H-4-845-29013_Bio21-LC-QTOF-6545.d/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_new/demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_new/new_server.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +545,7 @@
         <counts>
           <entry key="css" value="2601" />
           <entry key="dummy" value="8" />
-          <entry key="html" value="16412" />
+          <entry key="html" value="16448" />
           <entry key="ini" value="106" />
           <entry key="js" value="7150" />
           <entry key="py" value="15791" />
@@ -96,7 +554,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="2601" />
-          <entry key="HTML" value="16412" />
+          <entry key="HTML" value="16448" />
           <entry key="Ini" value="106" />
           <entry key="JavaScript" value="7150" />
           <entry key="PLAIN_TEXT" value="8" />
@@ -202,20 +660,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="296">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+            <state relative-caret-position="100">
+              <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -280,8 +738,8 @@
       <find>redirect</find>
       <find>id=&quot;body&quot;</find>
       <find>instruments</find>
-      <find>favicon</find>
       <find>details</find>
+      <find>favicon</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -355,7 +813,7 @@
       <path value="$PROJECT_DIR$/server_new/monitor_system/static/incubator-echarts-master/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="38" />
     <option name="y" value="384" />
     <option name="width" value="2450" />
@@ -603,7 +1061,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
+    <frame x="-6" y="-6" width="1381" height="885" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="top" content_ui="combo" id="Project" order="0" visible="true" weight="0.06693989" />
@@ -967,17 +1425,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/home.html">
+    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="100">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        <state relative-caret-position="296">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
