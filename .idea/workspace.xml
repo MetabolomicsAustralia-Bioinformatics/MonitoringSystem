@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab3198d5-3ed0-4727-abad-d3ced63a93b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/input/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/input/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/admin.txt" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/admin.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/admin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/admin/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/core/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/static/organisation_pics/UniversityofQueensland.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/static/organisation_pics/solar institute.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/static/organisation_pics/solar institute1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/static/organisation_pics/solar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/static/organisation_pics/solar1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/static/organisation_pics/solarInstitute.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/monitor_system/templates/multiGraph.html" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/monitor_system/templates/multiGraph.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_new/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_new/server.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +63,7 @@
           <entry key="html" value="16457" />
           <entry key="ini" value="108" />
           <entry key="js" value="7150" />
-          <entry key="py" value="15920" />
+          <entry key="py" value="15922" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -88,7 +73,7 @@
           <entry key="Ini" value="108" />
           <entry key="JavaScript" value="7150" />
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Python" value="15920" />
+          <entry key="Python" value="15922" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -152,11 +137,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server_new/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -165,7 +150,7 @@
         <entry file="file://$PROJECT_DIR$/server_new/monitor_system/core/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="158">
-              <caret line="232" column="45" lean-forward="true" selection-start-line="232" selection-start-column="45" selection-end-line="232" selection-end-column="45" />
+              <caret line="232" column="45" selection-start-line="232" selection-start-column="45" selection-end-line="232" selection-end-column="45" />
               <folding>
                 <element signature="e#0#62#0" expanded="true" />
               </folding>
@@ -177,7 +162,7 @@
         <entry file="file://$PROJECT_DIR$/server_new/monitor_system/admin/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
-              <caret line="153" column="23" lean-forward="true" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
+              <caret line="153" column="23" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
               <folding>
                 <element signature="e#0#79#0" expanded="true" />
               </folding>
@@ -185,11 +170,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/input/client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="144" column="26" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
+            <state relative-caret-position="155">
+              <caret line="137" column="30" lean-forward="true" selection-start-line="137" selection-start-column="30" selection-end-line="137" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -341,10 +326,10 @@
         <option value="$PROJECT_DIR$/server_new/new_server.py" />
         <option value="$PROJECT_DIR$/server_new/monitor_system/templates/base.html" />
         <option value="$PROJECT_DIR$/server_new/monitor_system/templates/multiGraph.html" />
-        <option value="$PROJECT_DIR$/input/client.py" />
         <option value="$PROJECT_DIR$/input/config.ini" />
         <option value="$PROJECT_DIR$/server_new/monitor_system/admin/views.py" />
         <option value="$PROJECT_DIR$/server_new/monitor_system/core/views.py" />
+        <option value="$PROJECT_DIR$/input/client.py" />
       </list>
     </option>
   </component>
@@ -359,7 +344,7 @@
       <path value="$PROJECT_DIR$/server_new/monitor_system/static/incubator-echarts-master/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="38" />
     <option name="y" value="384" />
     <option name="width" value="2450" />
@@ -577,6 +562,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="top" content_ui="combo" id="Project" order="0" weight="0.5218579" />
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
@@ -768,13 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="144" column="26" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server_new/monitor_system/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -792,7 +771,7 @@
     <entry file="file://$PROJECT_DIR$/server_new/monitor_system/core/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
-          <caret line="232" column="45" lean-forward="true" selection-start-line="232" selection-start-column="45" selection-end-line="232" selection-end-column="45" />
+          <caret line="232" column="45" selection-start-line="232" selection-start-column="45" selection-end-line="232" selection-end-column="45" />
           <folding>
             <element signature="e#0#62#0" expanded="true" />
           </folding>
@@ -802,7 +781,7 @@
     <entry file="file://$PROJECT_DIR$/server_new/monitor_system/admin/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="153" column="23" lean-forward="true" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
+          <caret line="153" column="23" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
           <folding>
             <element signature="e#0#79#0" expanded="true" />
           </folding>
@@ -812,7 +791,14 @@
     <entry file="file://$PROJECT_DIR$/server_new/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="137" column="30" lean-forward="true" selection-start-line="137" selection-start-column="30" selection-end-line="137" selection-end-column="30" />
         </state>
       </provider>
     </entry>
