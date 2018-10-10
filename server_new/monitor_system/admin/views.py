@@ -108,11 +108,14 @@ def organ_page(o_name):
                     o_pic = organisation.profile_image
                     organisation = (o_name, o_pic)
                     update_o_form.organ_name.data = o_name
+
                 else:
+
                     organisation.name = update_o_form.organ_name.data
                     if update_o_form.picture.data:
                         pic = add_pic(update_o_form.picture.data, o_name)
                         organisation.profile_image = pic
+
                     db.session.commit()
                     flash('Organisation Information Updated')
                     return redirect(url_for('admin.organ_page', o_name=organisation.name))
@@ -143,7 +146,7 @@ def delete_organisation(o_name):
     organisation = Organisation.query.filter(o_name == Organisation.name).first()
     db.session.delete(organisation)
     db.session.commit()
-    flash('Organisation has been deleted')
+
     return redirect(url_for('admin.view'))
 
 

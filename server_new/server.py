@@ -6,23 +6,8 @@ from monitor_system.models import Sample, Instrument
 from werkzeug.security import check_password_hash
 import pymysql
 pymysql.install_as_MySQLdb()
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate, MigrateCommand
 
 
-# configure db
-
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:1025@localhost:3306/monitoring_system'
-# app.config[
-#     'SQLALCHEMY_DATABASE_URI'] = 'postgres://giuuhvimvuhrot:7592aee111ef95e22a60c960d02ff83ea391a4f7943c47fb2143557983337d38@ec2-50-17-194-186.compute-1.amazonaws.com:5432/dfnrndu27hlrd3'
-
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
-# db = SQLAlchemy(app)
-db.create_all()
-migrate = Migrate(app, db)
 
 # create SSL socket layer
 context = ssl.SSLContext(ssl.PROTOCOL_TLSv1)

@@ -1,2 +1,1 @@
-solar: sola@gmail.com: 123
 admin: admin123@gmail.com: 123

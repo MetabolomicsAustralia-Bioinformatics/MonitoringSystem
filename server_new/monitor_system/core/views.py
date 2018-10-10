@@ -18,10 +18,10 @@ def index():
 # organisation details page
 @core.route('/<o_name>')
 def details(o_name):
-    print(o_name)
     o_id = Organisation.query.filter(Organisation.name == o_name).first().id
     all_instruments = [instrument.name for instrument in Instrument.query.filter(Instrument.o_id == o_id).all()]
     session['all_instruments'] = all_instruments
+    session['o_id'] = o_id
 
     return render_template("details.html", all_instruments=all_instruments)
 
@@ -65,7 +65,7 @@ def singleGraph():
 
         # filter data by time and instrument
         ins_samples = Sample.query.filter(Sample.instrument == selected_instrument, Sample.actual_start <= end,
-                                          Sample.actual_end >= start).all()
+                                          Sample.actual_end >= start,Sample.o_id==session['o_id']).all()
         end = int(time.mktime(end.timetuple()) * 1000)
         start = int(time.mktime(start.timetuple()) * 1000)
 
@@ -121,7 +121,7 @@ def defaultMultiGraph():
         for instrument in selected_instruments:
             ins_data = defaultdict(dict)
             ins_samples = Sample.query.filter(Sample.instrument == instrument, Sample.actual_start <= end,
-                                              Sample.actual_end >= start).all()
+                                              Sample.actual_end >= start,Sample.o_id==session['o_id']).all()
             stList = []
             etList = []
             info[instrument]["start"] = stList
@@ -204,7 +204,7 @@ def multiGraph():
         for instrument in selected_instruments:
             ins_data = defaultdict(dict)
             ins_samples = Sample.query.filter(Sample.instrument == instrument, Sample.actual_start <= end,
-                                              Sample.actual_end >= start).all()
+                                              Sample.actual_end >= start,Sample.o_id==session['o_id']).all()
             stList = []
             etList = []
             info[instrument]["start"] = stList

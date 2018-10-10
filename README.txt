@@ -4,7 +4,8 @@ client:
 	input/client.py
 
 server:
-	server/server.py
+	server_new/server.py
 
 web-app:
-	server/app.py
+	server_new/app.py
+	
