@@ -11,6 +11,7 @@ The adavantages of this system should be:
 
 3. contributes to instrument error detection
 
+## Run
 
 * run client:
 	step 1. update info in config.ini 
@@ -28,7 +29,14 @@ The adavantages of this system should be:
 * add admin:
 	step 1. open admin.txt, add new admin info in a new line. 
 	
-		adminname, email, pwd seperated by colon eg. admin: admin123@gmail.com: 123
+	adminname, email, pwd seperated by colon. Eg. admin: admin123@gmail.com: 123
 		
 	step2. run readAdmin.py
 	
+## prerequisites
+
+* python 3.6+ installed
+
+* msconverter installed(for client)
+
+http://proteowizard.sourceforge.net/download.html
